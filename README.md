@@ -61,3 +61,28 @@ best-effort read of Garmin's response — if a field name doesn't match
 your account/device, that value prints as `None` rather than crashing.
 The full raw JSON from each endpoint is always included when writing
 with `--out`, so nothing is lost even if a summary field misses.
+
+### Automated daily pull
+
+`.github/workflows/garmin-daily.yml` runs `garmin_recovery.py` every
+morning (~06:00 America/Chicago) on GitHub's runners — which have
+normal internet access — and commits the result to
+`data/garmin/<date>.json` and `data/garmin/latest.json`. GitHub only
+fires scheduled workflows from the default branch, so this starts
+running once merged there. It can also be run on demand from the
+Actions tab (`workflow_dispatch`).
+
+One-time setup, since Garmin's login flow needs an interactive MFA
+prompt that CI can't do:
+
+1. On your own machine: `python3 garmin_login.py` (enter your MFA code
+   if asked). This creates `~/.garminconnect/garmin_tokens.json`.
+2. Copy that file's contents.
+3. In the GitHub repo: Settings → Secrets and variables → Actions → New
+   repository secret, name `GARMIN_TOKEN_JSON`, value = the file
+   contents you copied.
+
+Caveat: this token can expire or be invalidated server-side. If the
+workflow starts failing with an authentication error, redo steps 1–3
+to refresh the secret. There's no fully unattended way around this
+with Garmin's unofficial API.
