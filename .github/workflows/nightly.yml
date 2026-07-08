@@ -1,8 +1,9 @@
-name: Garmin daily recovery pull
+name: Nightly Garmin + Strava backfill
 
-# Requires a one-time repo secret GARMIN_TOKEN_JSON — see README.md
-# ("Automated daily pull"). Scheduled workflows only fire from the
-# default branch, so this won't run until merged there.
+# Requires repo secrets: GARMIN_TOKEN_JSON, STRAVA_CLIENT_ID,
+# STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN — see README.md
+# ("Nightly job: Garmin + Strava in one DB"). Scheduled workflows only
+# fire from the default branch.
 on:
   schedule:
     - cron: "0 11 * * *" # ~06:00 America/Chicago (CDT); shifts to 05:00 during CST
@@ -12,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  pull-garmin:
+  nightly-job:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,17 +32,17 @@ jobs:
           mkdir -p ~/.garminconnect
           printf '%s' "$GARMIN_TOKEN_JSON" > ~/.garminconnect/garmin_tokens.json
 
-      - name: Pull recovery snapshot
-        run: |
-          mkdir -p data/garmin
-          today=$(date -u +%F)
-          python3 garmin_recovery.py --date "$today" --out "data/garmin/$today.json"
-          cp "data/garmin/$today.json" data/garmin/latest.json
+      - name: Run nightly job
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: python3 nightly_job.py
 
       - name: Commit and push
         run: |
-          git config user.name "garmin-bot"
+          git config user.name "journey-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/garmin
-          git diff --cached --quiet || git commit -m "Garmin recovery snapshot for $(date -u +%F)"
+          git add data/journey.db
+          git diff --cached --quiet || git commit -m "Nightly backfill $(date -u +%F)"
           git push
