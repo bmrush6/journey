@@ -1,9 +1,8 @@
-name: Nightly Garmin + Strava backfill
+name: Nightly Garmin backfill
 
-# Requires repo secrets: GARMIN_TOKEN_JSON, STRAVA_CLIENT_ID,
-# STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN — see README.md
-# ("Nightly job: Garmin + Strava in one DB"). Scheduled workflows only
-# fire from the default branch.
+# Requires repo secret GARMIN_TOKEN_JSON — see README.md
+# ("Nightly job: Garmin in one DB"). Scheduled workflows only fire from
+# the default branch.
 on:
   schedule:
     - cron: "0 11 * * *" # ~06:00 America/Chicago (CDT); shifts to 05:00 during CST
@@ -33,10 +32,6 @@ jobs:
           printf '%s' "$GARMIN_TOKEN_JSON" > ~/.garminconnect/garmin_tokens.json
 
       - name: Run nightly job
-        env:
-          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
-          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
-          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
         run: python3 nightly_job.py
 
       - name: Commit and push

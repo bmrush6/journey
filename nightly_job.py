@@ -1,16 +1,15 @@
-"""Nightly backfill: last N days of Garmin recovery metrics + Strava
+"""Nightly backfill: last N days of Garmin recovery metrics and
 activities into a local SQLite database (data/journey.db) — one row per
-day per metric, one row per Strava activity.
+day per metric, one row per activity. Garmin devices record activities
+directly, so this covers what Strava would show plus the recovery
+metrics (sleep, HRV, Body Battery) Strava doesn't track, all from one
+source.
 
 Idempotent: re-running the same window upserts rows instead of
 duplicating them, so a missed day or a re-run after a fix just catches
 up cleanly.
 
-Needs:
-- A cached Garmin session at ~/.garminconnect (see garmin_login.py)
-- Strava API credentials in the environment: STRAVA_CLIENT_ID,
-  STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN (see strava_login.py and
-  README.md for the one-time setup)
+Needs a cached Garmin session at ~/.garminconnect (see garmin_login.py).
 
 Usage:
     python3 nightly_job.py                # last 7 days, data/journey.db
@@ -20,9 +19,8 @@ Usage:
 import os
 import sqlite3
 import sys
-from datetime import date, datetime, timedelta
+from datetime import date, timedelta
 
-import requests
 from garminconnect import (
     Garmin,
     GarminConnectAuthenticationError,
@@ -53,14 +51,15 @@ CREATE TABLE IF NOT EXISTS body_battery (
     charged INTEGER,
     drained INTEGER
 );
-CREATE TABLE IF NOT EXISTS runs (
+CREATE TABLE IF NOT EXISTS activities (
     activity_id TEXT PRIMARY KEY,
     date TEXT,
     name TEXT,
+    type TEXT,
     distance_m REAL,
-    moving_time_s INTEGER,
-    elapsed_time_s INTEGER,
-    avg_speed REAL,
+    duration_s REAL,
+    avg_speed_mps REAL,
+    calories REAL,
     elevation_gain_m REAL
 );
 """
@@ -109,54 +108,21 @@ def save_body_battery(conn, d, battery):
     )
 
 
-def save_run(conn, activity):
+def save_activity(conn, activity):
     conn.execute(
-        "INSERT OR REPLACE INTO runs VALUES (?,?,?,?,?,?,?,?)",
+        "INSERT OR REPLACE INTO activities VALUES (?,?,?,?,?,?,?,?,?)",
         (
-            str(activity.get("id")),
-            (activity.get("start_date_local") or "")[:10],
-            activity.get("name"),
+            str(activity.get("activityId")),
+            (activity.get("startTimeLocal") or "")[:10],
+            activity.get("activityName"),
+            dig(activity, "activityType", "typeKey"),
             activity.get("distance"),
-            activity.get("moving_time"),
-            activity.get("elapsed_time"),
-            activity.get("average_speed"),
-            activity.get("total_elevation_gain"),
+            activity.get("duration"),
+            activity.get("averageSpeed"),
+            activity.get("calories"),
+            activity.get("elevationGain"),
         ),
     )
-
-
-def refresh_strava_token() -> str:
-    resp = requests.post(
-        "https://www.strava.com/oauth/token",
-        data={
-            "client_id": os.environ["STRAVA_CLIENT_ID"],
-            "client_secret": os.environ["STRAVA_CLIENT_SECRET"],
-            "refresh_token": os.environ["STRAVA_REFRESH_TOKEN"],
-            "grant_type": "refresh_token",
-        },
-        timeout=30,
-    )
-    resp.raise_for_status()
-    return resp.json()["access_token"]
-
-
-def fetch_strava_activities(access_token: str, after_epoch: int) -> list:
-    activities = []
-    page = 1
-    while True:
-        resp = requests.get(
-            "https://www.strava.com/api/v3/athlete/activities",
-            headers={"Authorization": f"Bearer {access_token}"},
-            params={"after": after_epoch, "per_page": 100, "page": page},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        batch = resp.json()
-        if not batch:
-            break
-        activities.extend(batch)
-        page += 1
-    return activities
 
 
 def main() -> None:
@@ -167,7 +133,8 @@ def main() -> None:
     client = Garmin()
     client.login(TOKEN_STORE)
 
-    days = [date.today() - timedelta(days=i) for i in range(DAYS_BACK)]
+    today = date.today()
+    days = [today - timedelta(days=i) for i in range(DAYS_BACK)]
 
     for d in days:
         cdate = d.isoformat()
@@ -187,16 +154,14 @@ def main() -> None:
         print(f"saved Garmin metrics for {cdate}")
 
     oldest = days[-1]
-    after_epoch = int(datetime.combine(oldest, datetime.min.time()).timestamp())
     try:
-        access_token = refresh_strava_token()
-        activities = fetch_strava_activities(access_token, after_epoch)
+        activities = client.get_activities_by_date(oldest.isoformat(), today.isoformat())
         for activity in activities:
-            save_run(conn, activity)
+            save_activity(conn, activity)
         conn.commit()
-        print(f"saved {len(activities)} Strava activities since {oldest.isoformat()}")
+        print(f"saved {len(activities)} activities since {oldest.isoformat()}")
     except Exception as exc:
-        print(f"skipped Strava activities: {exc}", file=sys.stderr)
+        print(f"skipped activities: {exc}", file=sys.stderr)
 
     conn.close()
 

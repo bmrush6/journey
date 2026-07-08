@@ -62,15 +62,16 @@ your account/device, that value prints as `None` rather than crashing.
 The full raw JSON from each endpoint is always included when writing
 with `--out`, so nothing is lost even if a summary field misses.
 
-### Nightly job: Garmin + Strava in one database
+### Nightly job: one database, one row per day per metric
 
 `nightly_job.py` backfills the last 7 days (configurable via
-`JOURNEY_DAYS_BACK`) of Garmin recovery metrics *and* Strava activities
-into a single SQLite database at `data/journey.db` — one row per day per
-metric (`sleep`, `hrv`, `body_battery` tables), one row per activity
-(`runs` table). It's safe to re-run: rows are upserted by date (or
-activity id), not duplicated, so a missed night or a re-run just catches
-up.
+`JOURNEY_DAYS_BACK`) of Garmin recovery metrics and activities into a
+SQLite database at `data/journey.db` — one row per day per metric
+(`sleep`, `hrv`, `body_battery` tables), one row per activity
+(`activities` table, covering runs/rides/etc. — Garmin's devices record
+these directly, so there's no need for a separate Strava pull). It's
+safe to re-run: rows are upserted by date (or activity id), not
+duplicated, so a missed night or a re-run just catches up.
 
 ```bash
 python3 nightly_job.py                  # last 7 days
@@ -88,35 +89,17 @@ America/Chicago) on GitHub's runners, which have normal internet access,
 and commits the updated database back to the repo. It can also be run on
 demand from the Actions tab (`workflow_dispatch`).
 
-**One-time setup — Garmin side** (same as before, since CI can't do the
+**One-time setup** (same as `garmin_login.py`, since CI can't do the
 interactive MFA prompt):
 1. On your own machine: `python3 garmin_login.py`
 2. Copy the contents of `~/.garminconnect/garmin_tokens.json`
 3. GitHub repo → Settings → Secrets and variables → Actions → New
    repository secret → name `GARMIN_TOKEN_JSON`, value = what you copied
 
-**One-time setup — Strava side** (needed for the `runs` table):
-1. Go to `strava.com/settings/api` and create an API application (any
-   name; for "Authorization Callback Domain" enter `localhost`). This
-   gives you a **Client ID** and **Client Secret**.
-2. On your own machine, run:
-   ```bash
-   python3 strava_login.py --client-id YOUR_CLIENT_ID --client-secret YOUR_CLIENT_SECRET
-   ```
-   It prints a link — open it, click **Authorize**, then copy the full
-   URL your browser redirects to (it'll look broken/fail to load — that's
-   expected) and paste it back into the script. It prints out a refresh
-   token.
-3. Add three GitHub repository secrets: `STRAVA_CLIENT_ID`,
-   `STRAVA_CLIENT_SECRET`, `STRAVA_REFRESH_TOKEN` (values from steps 1–2).
-
-Caveat: both Garmin's token and Strava's refresh token can expire or get
-invalidated server-side (Strava may also rotate the refresh token on
-use — this job doesn't write a rotated token back automatically). If the
+Caveat: this token can expire or get invalidated server-side. If the
 nightly workflow starts failing with an authentication error, redo the
-relevant one-time setup above and update the secret. There's no fully
-unattended way around this with an unofficial API (Garmin) or a
-long-lived-but-not-permanent token (Strava).
+steps above and update the secret. There's no fully unattended way
+around this with Garmin's unofficial API.
 
 ### Ad hoc single-day tools
 
