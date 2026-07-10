@@ -5,6 +5,13 @@ directly, so this covers what Strava would show plus the recovery
 metrics (sleep, HRV, Body Battery) Strava doesn't track, all from one
 source.
 
+Also refreshes the per-day recovery JSON snapshots under data/garmin/
+(same shape as garmin_recovery.py's --out, one file per date plus
+latest.json pointing at the most recent day that returned real data).
+Downstream consumers (e.g. the daily coaching routine) read
+data/garmin/latest.json directly, so this keeps that file live instead
+of requiring a manual garmin_recovery.py run.
+
 Idempotent: re-running the same window upserts rows instead of
 duplicating them, so a missed day or a re-run after a fix just catches
 up cleanly.
@@ -16,6 +23,7 @@ Usage:
     JOURNEY_DAYS_BACK=14 python3 nightly_job.py
 """
 
+import json
 import os
 import sqlite3
 import sys
@@ -28,9 +36,12 @@ from garminconnect import (
     GarminConnectTooManyRequestsError,
 )
 
+from garmin_recovery import summarize as build_recovery_summary
+
 TOKEN_STORE = os.path.expanduser("~/.garminconnect")
 DB_PATH = os.environ.get("JOURNEY_DB_PATH", "data/journey.db")
 DAYS_BACK = int(os.environ.get("JOURNEY_DAYS_BACK", "7"))
+GARMIN_JSON_DIR = os.environ.get("JOURNEY_GARMIN_JSON_DIR", "data/garmin")
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS sleep (
@@ -108,6 +119,20 @@ def save_body_battery(conn, d, battery):
     )
 
 
+def has_real_data(summary: dict) -> bool:
+    """True if a recovery summary has at least one non-None signal —
+    lets us skip pointing latest.json at a day Garmin hasn't posted
+    anything for yet (e.g. today, before sleep/HRV sync)."""
+    scalar_signals = (
+        summary.get("overnight_hrv"),
+        summary.get("all_day_stress_avg"),
+        summary.get("resting_heart_rate"),
+        (summary.get("sleep") or {}).get("score"),
+        (summary.get("body_battery") or {}).get("charged"),
+    )
+    return any(v is not None for v in scalar_signals)
+
+
 def save_activity(conn, activity):
     conn.execute(
         "INSERT OR REPLACE INTO activities VALUES (?,?,?,?,?,?,?,?,?)",
@@ -127,6 +152,7 @@ def save_activity(conn, activity):
 
 def main() -> None:
     os.makedirs(os.path.dirname(DB_PATH) or ".", exist_ok=True)
+    os.makedirs(GARMIN_JSON_DIR, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.executescript(SCHEMA)
 
@@ -135,6 +161,9 @@ def main() -> None:
 
     today = date.today()
     days = [today - timedelta(days=i) for i in range(DAYS_BACK)]
+
+    latest_summary = None
+    latest_date = None
 
     for d in days:
         cdate = d.isoformat()
@@ -152,6 +181,25 @@ def main() -> None:
             print(f"skipped body_battery {cdate}: {exc}", file=sys.stderr)
         conn.commit()
         print(f"saved Garmin metrics for {cdate}")
+
+        try:
+            summary = build_recovery_summary(cdate, client)
+            with open(os.path.join(GARMIN_JSON_DIR, f"{cdate}.json"), "w") as f:
+                json.dump(summary, f, indent=2, default=str)
+            print(f"wrote recovery snapshot for {cdate}")
+            # days[] is newest-first, so the first day we successfully get
+            # real data for is the one latest.json should point at.
+            if latest_summary is None and has_real_data(summary):
+                latest_summary, latest_date = summary, cdate
+        except Exception as exc:
+            print(f"skipped recovery snapshot {cdate}: {exc}", file=sys.stderr)
+
+    if latest_summary is not None:
+        with open(os.path.join(GARMIN_JSON_DIR, "latest.json"), "w") as f:
+            json.dump(latest_summary, f, indent=2, default=str)
+        print(f"latest.json -> {latest_date}")
+    else:
+        print("no day in the backfill window had real recovery data; latest.json left untouched", file=sys.stderr)
 
     oldest = days[-1]
     try:

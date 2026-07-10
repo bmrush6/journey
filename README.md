@@ -62,7 +62,7 @@ your account/device, that value prints as `None` rather than crashing.
 The full raw JSON from each endpoint is always included when writing
 with `--out`, so nothing is lost even if a summary field misses.
 
-### Nightly job: one database, one row per day per metric
+### Nightly job: one database, one row per day per metric — plus fresh recovery JSON
 
 `nightly_job.py` backfills the last 7 days (configurable via
 `JOURNEY_DAYS_BACK`) of Garmin recovery metrics and activities into a
@@ -73,6 +73,14 @@ these directly, so there's no need for a separate Strava pull). It's
 safe to re-run: rows are upserted by date (or activity id), not
 duplicated, so a missed night or a re-run just catches up.
 
+For each day in that window it also calls `garmin_recovery.py`'s
+summary function and writes `data/garmin/<date>.json`, then points
+`data/garmin/latest.json` at the most recent day that actually returned
+data (skipping "today" if Garmin hasn't synced sleep/HRV for it yet).
+This is the file downstream tools — like a daily coaching read —
+consume, so it's kept current on every run rather than requiring a
+manual `garmin_recovery.py --out` call.
+
 ```bash
 python3 nightly_job.py                  # last 7 days
 JOURNEY_DAYS_BACK=14 python3 nightly_job.py
@@ -81,13 +89,15 @@ JOURNEY_DAYS_BACK=14 python3 nightly_job.py
 To look at the data afterward:
 ```bash
 python3 -c "import sqlite3; c=sqlite3.connect('data/journey.db'); print(c.execute('SELECT * FROM sleep ORDER BY date DESC LIMIT 7').fetchall())"
+cat data/garmin/latest.json
 ```
 (or open `data/journey.db` in any SQLite browser).
 
 `.github/workflows/nightly.yml` runs this every morning (~06:00
 America/Chicago) on GitHub's runners, which have normal internet access,
-and commits the updated database back to the repo. It can also be run on
-demand from the Actions tab (`workflow_dispatch`).
+and commits the updated database and `data/garmin/*.json` snapshots
+back to the repo. It can also be run on demand from the Actions tab
+(`workflow_dispatch`).
 
 **One-time setup** (same as `garmin_login.py`, since CI can't do the
 interactive MFA prompt):
@@ -103,7 +113,10 @@ around this with Garmin's unofficial API.
 
 ### Ad hoc single-day tools
 
-`garmin_export.py` (broad one-off export, see above) and
-`garmin_recovery.py` (quick single-day recovery summary, see above)
-still work standalone — they're just no longer on the nightly schedule,
-which now runs through `nightly_job.py` instead.
+`garmin_export.py` (broad one-off export, see above) still works
+standalone for a one-off deep dive. `garmin_recovery.py` also still
+works standalone (e.g. to backfill a date outside the nightly window),
+and its summary function is now imported directly by `nightly_job.py`
+to build the `data/garmin/*.json` snapshots on every nightly run — so
+the two aren't fully independent anymore, `nightly_job.py` is just the
+scheduled wrapper around it.
