@@ -1,0 +1,37 @@
+{
+  "week_start": "2026-07-13",
+  "week_end": "2026-07-19",
+  "profile": {
+    "goal": "No goal race - open-ended base building. Run farther and faster while feeling strong, lower average HR (aerobic efficiency + resting HR trend), build muscle, ride bike opportunistically.",
+    "run_days_per_week": "4-5",
+    "weekly_mileage_floor": 21.0,
+    "load_ceiling_pct_week_over_week": 10,
+    "rest_day_policy": "No fixed rest day - readiness (sleep/HRV/RHR/Body Battery) decides day to day",
+    "gym_split": "3x/week: Chest/Tri early week, Back/Bi later week, Legs on Sunday",
+    "bike_policy": "Flexible/ad hoc, roughly 1x/week, used when running isn't the right call that day - not a fixed training pillar",
+    "hr_zones_source": "Strava (MaxHR-based), confirmed accurate by athlete",
+    "hr_zones": {
+      "z1": [0, 138],
+      "z2": [139, 173],
+      "z3": [174, 190],
+      "z4": [191, 207],
+      "z5": [208, null]
+    },
+    "lthr": 196,
+    "easy_run_target_hr": [145, 160]
+  },
+  "days": {
+    "2026-07-13": {"status": "done", "actual": "Rest"},
+    "2026-07-14": {"status": "done", "actual": "Trail run 7.52mi + Chest/Tri gym", "note": "Ran hard despite being an easy day - avg HR 178, peak 211 (climbs pushed into Z4/Z5). Combined with same-day lift, explains the low +45 Body Battery recharge the next morning."},
+    "2026-07-15": {"status": "planned", "plan": "Easy run 3.0mi, target HR 145-160 (no gym - already hit Chest/Tri Tue)", "readiness_at_plan_time": "AMBER"},
+    "2026-07-16": {"status": "planned", "plan": "Aerobic run 3.5mi, target HR 145-165 + Back/Bi gym"},
+    "2026-07-17": {"status": "planned", "plan": "Easy run 3.0mi, target HR 145-160"},
+    "2026-07-18": {"status": "planned", "plan": "Long run 6.0mi, target HR <=165 (first long run in 2 weeks, rebuilding gradually)"},
+    "2026-07-19": {"status": "planned", "plan": "Easy bike spin (low HR, recovery) + Legs gym - no run, protects Monday"}
+  },
+  "weekly_running_mileage_target": 23.0,
+  "prior_week_running_mileage": 21.2,
+  "flags": [
+    "Yesterday's (07-14) trail climbs pushed well past Zone 2 (avg 178, peak 211) despite being logged as an easy day. On Saturday's (07-18) long run, walk steep sections rather than let HR ride into Z4/Z5 - this is the actual lever for the 'lower average HR' goal."
+  ]
+}
