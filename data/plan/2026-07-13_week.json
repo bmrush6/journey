@@ -26,8 +26,8 @@
     "2026-07-15": {"status": "planned", "plan": "Easy run 3.0mi, target HR 145-160 (no gym - already hit Chest/Tri Tue)", "readiness_at_plan_time": "AMBER"},
     "2026-07-16": {"status": "planned", "plan": "Aerobic run 3.5mi, target HR 145-165 + Back/Bi gym"},
     "2026-07-17": {"status": "done", "plan": "Easy run 3.0mi, target HR 145-160", "actual": "Morning Trail Run 8.75mi, avg HR 169.8 (max 194) - ran before coach check-in, well over both the planned distance and the easy HR target, climbs pushed several segments into Z3/Z4 (up to avg 189.5 on one climb)", "readiness_at_plan_time": "AMBER (HRV 30 vs 7-day avg 30.9 flat; RHR 60 vs ~11-day baseline 58.5, mildly elevated; Body Battery recharge 42, below recent 49-54 band)"},
-    "2026-07-18": {"status": "planned", "plan": "Easy recovery run 2.5-3mi, target HR <=155 (downgraded from 6.0mi long run - today's unplanned 8.75mi trail effort already exceeded the long-run intent for this week, and the weekly mileage ceiling is nearly used up)"},
-    "2026-07-19": {"status": "planned", "plan": "Easy bike spin (low HR, recovery) + Legs gym - no run, protects Monday"}
+    "2026-07-18": {"status": "planned", "plan": "Rest day (swapped with Sunday per athlete request on 07-17)"},
+    "2026-07-19": {"status": "planned", "plan": "Easy run 2.5-3mi, target HR <=155 + Legs gym (swapped with Saturday per athlete request - still capped small since the weekly mileage ceiling is nearly used up)"}
   },
   "weekly_running_mileage_target": 23.0,
   "prior_week_running_mileage": 21.2,
