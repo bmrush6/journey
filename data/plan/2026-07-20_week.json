@@ -20,24 +20,26 @@
     },
     "lthr": 196,
     "easy_run_target_hr": [145, 160],
-    "known_issue": "Three straight easy-day HR overshoots (07-14, 07-17, 07-19) all happened on trail/hilly routes. Garmin's own Training Status flagged 'Unproductive - Low Aerobic Shortage' over the trailing 4 weeks, corroborating this independently. This week's easy days are deliberately routed flat/road to isolate terrain as the variable."
+    "known_issue": "Three straight easy-day HR overshoots (07-14, 07-17, 07-19) all happened on trail/hilly routes. Garmin's own Training Status flagged 'Unproductive - Low Aerobic Shortage' over the trailing 4 weeks, corroborating this independently. This week's easy days are deliberately routed flat/road to isolate terrain as a variable - but see heat_context below, which arrived after the initial version of this plan and is likely also a real contributor to elevated HR.",
+    "heat_context": "Little Rock under an Extreme Heat Warning through Tue 07-21 evening: highs ~100F, heat index 105-115F, overnight lows stuck in the 80s (source: NWS / arkansasonline.com, checked 2026-07-20). A cooler front arrives Wed but highs stay mid-upper 90s through at least Thu. Poor overnight cooling likely contributes to Garmin's 'High Recovery Need' reading independent of training discipline. HR targets are loosened and outdoor running is paused on the peak-danger day (Tue) as a result."
   },
   "days": {
-    "2026-07-20": {"status": "planned", "plan": "Chest/Tri gym + easy bike spin 20-30min, HR <145", "readiness_at_plan_time": "AMBER - real overnight markers fine (RHR 57 vs ~58.5 baseline, HRV 30 vs 7-day avg ~29.4, sleep score 84) but Garmin composite Training Readiness 39/Low (High Recovery Need, Recent Stress Medium) and Training Status Unproductive/Low Aerobic Shortage over last 4 weeks argue for a low-impact day", "note": "Supersedes an earlier version of this file generated this morning before the Garmin data pipeline was fixed - that version used 07-18's data (RHR63/HRV25) mislabeled as today's and called RED; real today's numbers are meaningfully better."},
-    "2026-07-21": {"status": "planned", "plan": "Easy run 4.0mi, target HR 145-160 - flat/road route, not trail"},
-    "2026-07-22": {"status": "planned", "plan": "Easy run 3.5mi, target HR 145-160 - flat/road route + Back/Bi gym"},
-    "2026-07-23": {"status": "planned", "plan": "Aerobic run 5.0mi, target HR 145-165"},
-    "2026-07-24": {"status": "planned", "plan": "Easy run 4.0mi, target HR 145-160"},
-    "2026-07-25": {"status": "planned", "plan": "Long run 9.0mi (protected long run), target HR <=165 - walk any real climbs rather than let HR ride"},
+    "2026-07-20": {"status": "planned", "plan": "Chest/Tri gym + easy bike spin 20-30min, HR <145 (indoor bike or very early/late if outdoor - heat index ~110 today)", "readiness_at_plan_time": "AMBER - real overnight markers fine (RHR 57 vs ~58.5 baseline, HRV 30 vs 7-day avg ~29.4, sleep score 84) but Garmin composite Training Readiness 39/Low (High Recovery Need, Recent Stress Medium) and Training Status Unproductive/Low Aerobic Shortage over last 4 weeks argue for a low-impact day", "note": "Supersedes an earlier version of this file generated this morning before the Garmin data pipeline was fixed - that version used 07-18's data (RHR63/HRV25) mislabeled as today's and called RED; real today's numbers are meaningfully better."},
+    "2026-07-21": {"status": "planned", "plan": "Rest / indoor cross-train only - no outdoor running", "note": "Extreme Heat Warning peak day, heat index up to 115F. Original plan called for a flat-route test run here; moved to Wednesday for safety."},
+    "2026-07-22": {"status": "planned", "plan": "Easy run 4.0mi, flat/road route, early morning start + Back/Bi gym", "note": "Absorbs Tuesday's cancelled run distance; cool front arrives but still hot"},
+    "2026-07-23": {"status": "planned", "plan": "Aerobic run 4.5mi, early morning, target HR loosened to 150-168 (heat raises HR at same effort - don't fight it)"},
+    "2026-07-24": {"status": "planned", "plan": "Easy run 4.0mi, early morning"},
+    "2026-07-25": {"status": "planned", "plan": "Long run, trimmed to 8.0mi (protected long run), dawn start, hydrate/electrolytes beforehand, walk breaks freely allowed, bail early on dizziness/nausea/stopped sweating"},
     "2026-07-26": {"status": "planned", "plan": "Legs gym, no run"}
   },
-  "weekly_running_mileage_target": 25.5,
+  "weekly_running_mileage_target": 20.5,
   "prior_week_running_mileage": 22.98,
-  "growth_pct_vs_prior_week": 11.0,
+  "growth_pct_vs_prior_week": -10.8,
+  "athlete_requested_growth_pct_this_week": "10-15",
   "ceiling": 26.43,
   "flags": [
-    "Garmin's own Training Status (Unproductive - Low Aerobic Shortage, trailing 4 weeks) independently corroborates the recurring 'easy days running hot' pattern flagged since 07-14. The fix isn't more effort, it's genuinely easier easy days.",
-    "Tuesday and Wednesday's easy runs are deliberately routed flat/road (not the usual trail routes) to test whether terrain, not effort, has been driving the HR overshoots.",
+    "Garmin's own Training Status (Unproductive - Low Aerobic Shortage, trailing 4 weeks) independently corroborates the recurring 'easy days running hot' pattern flagged since 07-14. The fix isn't more effort, it's genuinely easier easy days - though heat is now a confirmed additional confound this week (see heat_context).",
+    "Athlete requested +10-15% mileage this week (would be ~25.3-26.4mi); actual target trimmed to ~20.5mi because Tuesday's run was cancelled for an Extreme Heat Warning (heat index up to 115F), not for lack of discipline or fitness. If athlete wants to still chase the mileage number, a light Sunday shakeout run could recover some of the gap once heat breaks - otherwise carry the growth target into next week.",
     "This morning's original version of this file (created ~08:59 before the Garmin auth fix) used stale 07-18 data mislabeled as 07-20's and called a RED day - corrected here with verified same-day data. Worth spot-checking the scheduled coach's output against actual data freshness going forward if the pipeline has recently had an outage."
   ]
 }
