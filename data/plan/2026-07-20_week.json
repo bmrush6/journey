@@ -1,0 +1,40 @@
+{
+  "week_start": "2026-07-20",
+  "week_end": "2026-07-26",
+  "profile": {
+    "goal": "No goal race - open-ended base building. Run farther and faster while feeling strong, lower average HR (aerobic efficiency + resting HR trend), build muscle, ride bike opportunistically.",
+    "run_days_per_week": "4-5",
+    "weekly_mileage_floor": 21.0,
+    "load_ceiling_pct_week_over_week": 10,
+    "rest_day_policy": "No fixed rest day - readiness (sleep/HRV/RHR/Body Battery) decides day to day",
+    "gym_split": "3x/week: Chest/Tri early week, Back/Bi later week, Legs on Sunday",
+    "bike_policy": "Flexible/ad hoc, roughly 1x/week, used when running isn't the right call that day - not a fixed training pillar",
+    "hr_zones_source": "Strava (MaxHR-based), confirmed accurate by athlete",
+    "hr_zones": {
+      "z1": [0, 138],
+      "z2": [139, 173],
+      "z3": [174, 190],
+      "z4": [191, 207],
+      "z5": [208, null]
+    },
+    "lthr": 196,
+    "easy_run_target_hr": [145, 160]
+  },
+  "days": {
+    "2026-07-20": {"status": "done", "plan": "Rest from running (Chest/Tri gym only)", "note": "RED readiness call - see flags. No plan file existed for this week yet; proposing the skeleton below.", "readiness_at_plan_time": "RED (RHR 63 vs 14-day baseline 58.5, clearly elevated; HRV 25 vs 7-day avg 30.3; third straight 'easy' run overshoot on 07-19)"},
+    "2026-07-21": {"status": "planned", "plan": "Easy run 4.0-4.5mi, target HR 145-160 (no gym - first real run since 07-19, hold the HR target this time)"},
+    "2026-07-22": {"status": "planned", "plan": "Aerobic run 4.0-4.5mi + Back/Bi gym"},
+    "2026-07-23": {"status": "planned", "plan": "Rest or easy cross-train (Body Battery / HRV dependent - reassess morning of)"},
+    "2026-07-24": {"status": "planned", "plan": "Aerobic run 4.5-5.0mi, target HR 145-165"},
+    "2026-07-25": {"status": "planned", "plan": "Long run, 7.0-7.5mi, target HR 145-165 - the week's protected long run"},
+    "2026-07-26": {"status": "planned", "plan": "Legs gym + optional easy spin/bike (ask athlete before assuming bike day)"}
+  },
+  "weekly_running_mileage_target": 21.0,
+  "prior_week_running_mileage": 22.98,
+  "ceiling": 25.28,
+  "flags": [
+    "No plan file existed for the week of 2026-07-20 when this run started - this file was generated fresh from the athlete profile and the 22.98mi prior-week total (ceiling = 25.28mi).",
+    "Skeleton totals ~4.25 + 4.25 + 4.75 + 7.25 = ~20.5mi across 4 run days (Tue/Wed/Fri/Sat), just under the 21mi floor by design since today opened as a rest day for readiness reasons - expect this to flex up slightly as the week plays out and stay comfortably under the 25.28mi ceiling.",
+    "Recurring pattern flagged three mornings running (07-14, 07-17, 07-19): 'easy' days keep landing avg HR 166-178 instead of the 145-160 target. Tuesday's easy run is the test of whether this correction actually takes."
+  ]
+}
