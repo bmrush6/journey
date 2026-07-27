@@ -18,17 +18,18 @@
       "z5": [208, null]
     },
     "lthr": 196,
-    "easy_run_target_hr": [145, 160]
+    "easy_run_target_hr": [145, 155],
+    "load_focus_note": "Garmin's Load Focus (Jun29-Jul27 window, screenshot shared by athlete 2026-07-27) shows Anaerobic 451 (near optimal), High Aerobic 2068 (well over optimal range), Low Aerobic 425 (well under optimal range) - confirms the recurring easy-day-HR-overshoot pattern in numeric form. Tightened easy_run_target_hr from 145-160 to 145-155 this week so easy runs land in Garmin's actual Low Aerobic bucket instead of spilling into High Aerobic. Don't add more intensity work to compensate - Anaerobic is already satisfied."
   },
   "note_this_file_created": "No plan file existed for this week when the coach ran 2026-07-27 (last week's file ended 07-26). Proposing a full skeleton now per the athlete profile and load-ceiling rule below. Last week (07-20 to 07-26) closed out with actual running mileage of 24.65mi (Strava: 8.31+2.80+13.37+2.01+6.04mi across 07-21/22/23/25/26 - note the saved plan for 07-25/07-26 called for a 9.0mi long run then a Legs-only rest day, but actuals show a short 2.0mi run 07-25 and a 6.0mi run 07-26 instead, with no Legs session logged either day - the long run effectively got split/shifted rather than run as planned; not re-litigated here since those days are already closed).",
   "days": {
-    "2026-07-27": {"status": "planned", "plan": "Chest/Tri gym + easy run 4.0mi, target HR 145-160", "readiness_at_plan_time": "GREEN - HRV 39 vs ~29.3 7-day avg (up), resting HR 53 vs ~60.2 11-14 day baseline (well down), sleep score 94 (best of the last 2 weeks), Body Battery charged 74 on waking. Strongest readiness reading in the observed window - pairing the scheduled Chest/Tri day with an easy aerobic run rather than defaulting to gym-only."},
-    "2026-07-28": {"status": "planned", "plan": "Easy run 4.5mi, target HR 145-160"},
-    "2026-07-29": {"status": "planned", "plan": "Back/Bi gym, easy run 3.5mi or rest depending on readiness"},
-    "2026-07-30": {"status": "planned", "plan": "Quality/aerobic run 5.0mi (structured effort optional per athlete goal of both easy-volume and hard-stimulus work)"},
-    "2026-07-31": {"status": "planned", "plan": "Easy run 4.0mi, target HR 145-160"},
+    "2026-07-27": {"status": "planned", "plan": "Chest/Tri gym + easy run 4.0mi, target HR 145-155", "readiness_at_plan_time": "GREEN - HRV 39 vs ~29.3 7-day avg (up), resting HR 53 vs ~60.2 11-14 day baseline (well down), sleep score 94 (best of the last 2 weeks), Body Battery charged 74 on waking. Strongest readiness reading in the observed window - pairing the scheduled Chest/Tri day with an easy aerobic run rather than defaulting to gym-only."},
+    "2026-07-28": {"status": "planned", "plan": "Easy run 4.5mi, target HR 145-155"},
+    "2026-07-29": {"status": "planned", "plan": "Back/Bi gym, easy run 3.5mi or rest depending on readiness, target HR 145-155 if run happens"},
+    "2026-07-30": {"status": "planned", "plan": "Quality/aerobic run 5.0mi (structured effort optional - this week's anaerobic bucket is already near-optimal per Garmin, so only add intensity here if it genuinely appeals, not to chase more speed work)"},
+    "2026-07-31": {"status": "planned", "plan": "Easy run 4.0mi, target HR 145-155"},
     "2026-08-01": {"status": "planned", "plan": "Rest or easy shakeout - readiness dependent, protect the long run"},
-    "2026-08-02": {"status": "planned", "plan": "Legs gym + long run 9.0mi (protected long run), target HR <=165"}
+    "2026-08-02": {"status": "planned", "plan": "Legs gym + long run 9.0mi (protected long run), target HR 145-160 - keep it in the low-aerobic band this time rather than drifting to 165, given the Load Focus imbalance"}
   },
   "weekly_running_mileage_target": 26.5,
   "prior_week_running_mileage": 24.65,
