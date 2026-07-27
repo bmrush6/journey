@@ -1,0 +1,39 @@
+{
+  "created": "2026-07-27",
+  "goal_race": {
+    "distance": "half marathon (13.1mi)",
+    "date": "2026-10-17",
+    "day_of_week": "Saturday",
+    "target_avg_pace": "sub-8:00/mi",
+    "target_finish_time": "under 1:44:48",
+    "feasibility_note": "8:00/mi sits right at this athlete's aerobic threshold (top of Strava Z2 / bottom of Z3, per hr_zones/run pace zones on file) - well-matched goal given current fitness, not a stretch. Riegel-projected from embedded best efforts (23:10-25:28 5k pace achieved mid-run, not fresh time trials) lands very close to the target, with room to spare if a dedicated fresh 5K comes in faster."
+  },
+  "training_paces": {
+    "easy": {"pace": "10:00-11:00/mi", "hr": [145, 155], "purpose": "Aerobic base - this athlete's documented weak point (Garmin Load Focus: Low Aerobic Shortage, confirmed 2026-07-27)"},
+    "long_run": {"pace": "9:00-9:30/mi easy portion, goal-race-pace miles worked in during Peak phase", "hr": [155, 170], "purpose": "Endurance + race-specific practice"},
+    "tempo_threshold": {"pace": "7:00-7:30/mi", "hr": [185, 196], "purpose": "Raise sustainable threshold above race pace"},
+    "race_pace": {"pace": "7:50-8:00/mi", "hr": "~165-180, should feel comfortably hard not maxed", "purpose": "The pace being trained toward"},
+    "intervals": {"pace": "6:30-7:00/mi", "hr": "191+", "purpose": "VO2max - already well-covered per Load Focus Anaerobic bucket, don't overdo relative to easy volume"}
+  },
+  "standing_rules": [
+    "Every easy day must land 145-155 HR, not just 'Zone 2 by Strava's wider 139-173 definition' - this has been the athlete's recurring failure mode (multiple 'easy' runs landing 166-181bpm) and directly caused the Low Aerobic Shortage status. Enforce this explicitly every week, don't assume it's fixed.",
+    "Cutback week every 4th week (weeks 4, 7, 10) - non-negotiable given this athlete's history of not respecting easy-day intensity; recovery weeks carry extra importance here.",
+    "Long run peaks at 13.0mi (week 9) - do not exceed race distance in training.",
+    "Once within 3 weeks of race day (week 10 onward), standard 'protect the long run, respect load ceiling' rules are superseded by taper logic: freshness beats fitness, default to less, do not chase missed volume.",
+    "Race week (week 12, 10-12 to 10-17): shakeout runs only (3-4mi easy, no quality work after Tuesday), full rest 1-2 days before the race, race is Saturday 10-17."
+  ],
+  "weeks": [
+    {"week": 1, "start": "2026-07-27", "end": "2026-08-02", "phase": "Base", "target_mileage": 26.5, "long_run": 9.0, "note": "Continue easy-day HR discipline fix, no quality work yet"},
+    {"week": 2, "start": "2026-08-03", "end": "2026-08-09", "phase": "Base", "target_mileage": 28, "long_run": 10.0},
+    {"week": 3, "start": "2026-08-10", "end": "2026-08-16", "phase": "Base", "target_mileage": 29.5, "long_run": 10.5, "note": "Introduce first tempo run: ~2mi @ 7:00-7:30/mi within an easy run"},
+    {"week": 4, "start": "2026-08-17", "end": "2026-08-23", "phase": "Base-to-Build", "cutback": true, "target_mileage": 24, "long_run": 8.0, "note": "Recovery week"},
+    {"week": 5, "start": "2026-08-24", "end": "2026-08-30", "phase": "Build", "target_mileage": 30, "long_run": 11.0, "note": "Tempo run grows to ~3mi @ 7:00-7:30/mi"},
+    {"week": 6, "start": "2026-08-31", "end": "2026-09-06", "phase": "Build", "target_mileage": 31.5, "long_run": 12.0, "note": "Add a short interval session alongside the tempo run"},
+    {"week": 7, "start": "2026-09-07", "end": "2026-09-13", "phase": "Build", "cutback": true, "target_mileage": 25, "long_run": 9.0, "note": "Recovery week"},
+    {"week": 8, "start": "2026-09-14", "end": "2026-09-20", "phase": "Peak", "target_mileage": 32, "long_run": 12.5, "note": "Long run includes 3-4mi at goal race pace (7:50-8:00/mi)"},
+    {"week": 9, "start": "2026-09-21", "end": "2026-09-27", "phase": "Peak", "target_mileage": 33, "long_run": 13.0, "note": "Peak long run - near race distance, do not exceed"},
+    {"week": 10, "start": "2026-09-28", "end": "2026-10-04", "phase": "Peak-to-Taper", "cutback": true, "target_mileage": 26, "long_run": 10.0, "note": "Volume starts receding, taper logic begins to apply"},
+    {"week": 11, "start": "2026-10-05", "end": "2026-10-11", "phase": "Taper", "target_mileage": 20, "long_run": 8.0, "note": "Short race-pace tune-up mid-week, freshness over fitness"},
+    {"week": 12, "start": "2026-10-12", "end": "2026-10-17", "phase": "Race week", "target_mileage": "~15 including race", "long_run": "none - shakeouts only (3-4mi easy, no quality after Tuesday)", "note": "RACE DAY Saturday 2026-10-17, target sub-8:00/mi average (under 1:44:48)"}
+  ]
+}

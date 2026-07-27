@@ -2,7 +2,7 @@
   "week_start": "2026-07-27",
   "week_end": "2026-08-02",
   "profile": {
-    "goal": "No goal race - open-ended base building. Run farther and faster while feeling strong, lower average HR (aerobic efficiency + resting HR trend), build muscle, ride bike opportunistically.",
+    "goal": "GOAL RACE SET 2026-07-27: half marathon on 2026-10-17, target sub-8:00/mi average pace (under 1:44:48). Full 12-week periodized block in data/plan/half_marathon_block.json - this is week 1 of that block (Base phase, target 26.5mi, long run 9.0mi). Secondary goals still active: feel strong, lower average HR (aerobic efficiency + resting HR trend), build muscle, ride bike opportunistically.",
     "run_days_per_week": "4-5",
     "weekly_mileage_floor": 21.0,
     "load_ceiling_pct_week_over_week": 10,
