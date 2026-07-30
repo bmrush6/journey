@@ -71,9 +71,20 @@ CREATE TABLE IF NOT EXISTS activities (
     duration_s REAL,
     avg_speed_mps REAL,
     calories REAL,
-    elevation_gain_m REAL
+    elevation_gain_m REAL,
+    avg_hr REAL,
+    max_hr REAL
 );
 """
+
+
+def ensure_activity_hr_columns(conn):
+    """Migration for DBs created before avg_hr/max_hr existed."""
+    cols = {row[1] for row in conn.execute("PRAGMA table_info(activities)")}
+    if "avg_hr" not in cols:
+        conn.execute("ALTER TABLE activities ADD COLUMN avg_hr REAL")
+    if "max_hr" not in cols:
+        conn.execute("ALTER TABLE activities ADD COLUMN max_hr REAL")
 
 
 def dig(value, *path):
@@ -135,7 +146,7 @@ def has_real_data(summary: dict) -> bool:
 
 def save_activity(conn, activity):
     conn.execute(
-        "INSERT OR REPLACE INTO activities VALUES (?,?,?,?,?,?,?,?,?)",
+        "INSERT OR REPLACE INTO activities VALUES (?,?,?,?,?,?,?,?,?,?,?)",
         (
             str(activity.get("activityId")),
             (activity.get("startTimeLocal") or "")[:10],
@@ -146,6 +157,8 @@ def save_activity(conn, activity):
             activity.get("averageSpeed"),
             activity.get("calories"),
             activity.get("elevationGain"),
+            activity.get("averageHR"),
+            activity.get("maxHR"),
         ),
     )
 
@@ -155,6 +168,7 @@ def main() -> None:
     os.makedirs(GARMIN_JSON_DIR, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.executescript(SCHEMA)
+    ensure_activity_hr_columns(conn)
 
     client = Garmin()
     client.login(TOKEN_STORE)
