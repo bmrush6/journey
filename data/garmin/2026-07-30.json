@@ -9,10 +9,10 @@
     "awake_seconds": 120
   },
   "overnight_hrv": 32,
-  "all_day_stress_avg": 20,
+  "all_day_stress_avg": 25,
   "body_battery": {
-    "charged": 47,
-    "drained": 0
+    "charged": 50,
+    "drained": 45
   },
   "resting_heart_rate": 63.0,
   "raw": {
@@ -42,7 +42,7 @@
         "retro": false,
         "sleepFromDevice": true,
         "averageRespirationValue": 17.0,
-        "lowestRespirationValue": 12.0,
+        "lowestRespirationValue": 11.0,
         "highestRespirationValue": 22.0,
         "awakeCount": 0,
         "avgSleepStress": 21.0,
@@ -123,7 +123,7 @@
           "userProfilePk": 144256603,
           "calendarDate": "2026-07-31",
           "deviceId": 3509408540,
-          "timestampGmt": "2026-07-30T12:30:13",
+          "timestampGmt": "2026-07-30T23:23:52",
           "baseline": 480,
           "actual": 480,
           "feedback": "NO_CHANGE_NO_ADJUSTMENTS",
@@ -139,74 +139,659 @@
       },
       "sleepMovement": [
         {
+          "startGMT": "2026-07-30T03:03:00.0",
+          "endGMT": "2026-07-30T03:04:00.0",
+          "activityLevel": 5.611399378305022
+        },
+        {
+          "startGMT": "2026-07-30T03:04:00.0",
+          "endGMT": "2026-07-30T03:05:00.0",
+          "activityLevel": 5.141684871926378
+        },
+        {
+          "startGMT": "2026-07-30T03:05:00.0",
+          "endGMT": "2026-07-30T03:06:00.0",
+          "activityLevel": 4.650410838897847
+        },
+        {
+          "startGMT": "2026-07-30T03:06:00.0",
+          "endGMT": "2026-07-30T03:07:00.0",
+          "activityLevel": 4.147920704000185
+        },
+        {
+          "startGMT": "2026-07-30T03:07:00.0",
+          "endGMT": "2026-07-30T03:08:00.0",
+          "activityLevel": 3.6458168664735364
+        },
+        {
+          "startGMT": "2026-07-30T03:08:00.0",
+          "endGMT": "2026-07-30T03:09:00.0",
+          "activityLevel": 3.15633785559351
+        },
+        {
+          "startGMT": "2026-07-30T03:09:00.0",
+          "endGMT": "2026-07-30T03:10:00.0",
+          "activityLevel": 2.6942541658118704
+        },
+        {
+          "startGMT": "2026-07-30T03:10:00.0",
+          "endGMT": "2026-07-30T03:11:00.0",
+          "activityLevel": 2.2761806852022755
+        },
+        {
+          "startGMT": "2026-07-30T03:11:00.0",
+          "endGMT": "2026-07-30T03:12:00.0",
+          "activityLevel": 1.918525205548707
+        },
+        {
+          "startGMT": "2026-07-30T03:12:00.0",
+          "endGMT": "2026-07-30T03:13:00.0",
+          "activityLevel": 1.638287266818884
+        },
+        {
+          "startGMT": "2026-07-30T03:13:00.0",
+          "endGMT": "2026-07-30T03:14:00.0",
+          "activityLevel": 1.4478283120877362
+        },
+        {
+          "startGMT": "2026-07-30T03:14:00.0",
+          "endGMT": "2026-07-30T03:15:00.0",
+          "activityLevel": 1.3467578006623262
+        },
+        {
+          "startGMT": "2026-07-30T03:15:00.0",
+          "endGMT": "2026-07-30T03:16:00.0",
+          "activityLevel": 1.3147985117995091
+        },
+        {
+          "startGMT": "2026-07-30T03:16:00.0",
+          "endGMT": "2026-07-30T03:17:00.0",
+          "activityLevel": 1.3279782344898343
+        },
+        {
+          "startGMT": "2026-07-30T03:17:00.0",
+          "endGMT": "2026-07-30T03:18:00.0",
+          "activityLevel": 1.3610517980516623
+        },
+        {
+          "startGMT": "2026-07-30T03:18:00.0",
+          "endGMT": "2026-07-30T03:19:00.0",
+          "activityLevel": 1.3758253370263556
+        },
+        {
+          "startGMT": "2026-07-30T03:19:00.0",
+          "endGMT": "2026-07-30T03:20:00.0",
+          "activityLevel": 1.3911439347520813
+        },
+        {
+          "startGMT": "2026-07-30T03:20:00.0",
+          "endGMT": "2026-07-30T03:21:00.0",
+          "activityLevel": 1.4107294157183492
+        },
+        {
+          "startGMT": "2026-07-30T03:21:00.0",
+          "endGMT": "2026-07-30T03:22:00.0",
+          "activityLevel": 1.4377506340979513
+        },
+        {
+          "startGMT": "2026-07-30T03:22:00.0",
+          "endGMT": "2026-07-30T03:23:00.0",
+          "activityLevel": 1.4787298163609037
+        },
+        {
+          "startGMT": "2026-07-30T03:23:00.0",
+          "endGMT": "2026-07-30T03:24:00.0",
+          "activityLevel": 1.5388083491046936
+        },
+        {
+          "startGMT": "2026-07-30T03:24:00.0",
+          "endGMT": "2026-07-30T03:25:00.0",
+          "activityLevel": 1.614501804715228
+        },
+        {
+          "startGMT": "2026-07-30T03:25:00.0",
+          "endGMT": "2026-07-30T03:26:00.0",
+          "activityLevel": 1.7032000439754742
+        },
+        {
+          "startGMT": "2026-07-30T03:26:00.0",
+          "endGMT": "2026-07-30T03:27:00.0",
+          "activityLevel": 1.7999253560208532
+        },
+        {
+          "startGMT": "2026-07-30T03:27:00.0",
+          "endGMT": "2026-07-30T03:28:00.0",
+          "activityLevel": 1.898454327490054
+        },
+        {
+          "startGMT": "2026-07-30T03:28:00.0",
+          "endGMT": "2026-07-30T03:29:00.0",
+          "activityLevel": 1.9924031672304712
+        },
+        {
+          "startGMT": "2026-07-30T03:29:00.0",
+          "endGMT": "2026-07-30T03:30:00.0",
+          "activityLevel": 2.0750646705889415
+        },
+        {
+          "startGMT": "2026-07-30T03:30:00.0",
+          "endGMT": "2026-07-30T03:31:00.0",
+          "activityLevel": 2.1404673018435036
+        },
+        {
+          "startGMT": "2026-07-30T03:31:00.0",
+          "endGMT": "2026-07-30T03:32:00.0",
+          "activityLevel": 2.18599172330185
+        },
+        {
+          "startGMT": "2026-07-30T03:32:00.0",
+          "endGMT": "2026-07-30T03:33:00.0",
+          "activityLevel": 2.205921740991389
+        },
+        {
+          "startGMT": "2026-07-30T03:33:00.0",
+          "endGMT": "2026-07-30T03:34:00.0",
+          "activityLevel": 2.1958313751320744
+        },
+        {
+          "startGMT": "2026-07-30T03:34:00.0",
+          "endGMT": "2026-07-30T03:35:00.0",
+          "activityLevel": 2.1567224310197193
+        },
+        {
+          "startGMT": "2026-07-30T03:35:00.0",
+          "endGMT": "2026-07-30T03:36:00.0",
+          "activityLevel": 2.0891944682587025
+        },
+        {
+          "startGMT": "2026-07-30T03:36:00.0",
+          "endGMT": "2026-07-30T03:37:00.0",
+          "activityLevel": 1.9947720955517432
+        },
+        {
+          "startGMT": "2026-07-30T03:37:00.0",
+          "endGMT": "2026-07-30T03:38:00.0",
+          "activityLevel": 1.876904781721677
+        },
+        {
+          "startGMT": "2026-07-30T03:38:00.0",
+          "endGMT": "2026-07-30T03:39:00.0",
+          "activityLevel": 1.7374372326889669
+        },
+        {
+          "startGMT": "2026-07-30T03:39:00.0",
+          "endGMT": "2026-07-30T03:40:00.0",
+          "activityLevel": 1.5794132001100527
+        },
+        {
+          "startGMT": "2026-07-30T03:40:00.0",
+          "endGMT": "2026-07-30T03:41:00.0",
+          "activityLevel": 1.4060972140553818
+        },
+        {
+          "startGMT": "2026-07-30T03:41:00.0",
+          "endGMT": "2026-07-30T03:42:00.0",
+          "activityLevel": 1.227407810702456
+        },
+        {
+          "startGMT": "2026-07-30T03:42:00.0",
+          "endGMT": "2026-07-30T03:43:00.0",
+          "activityLevel": 1.05404182751088
+        },
+        {
+          "startGMT": "2026-07-30T03:43:00.0",
+          "endGMT": "2026-07-30T03:44:00.0",
+          "activityLevel": 0.9018246849861474
+        },
+        {
+          "startGMT": "2026-07-30T03:44:00.0",
+          "endGMT": "2026-07-30T03:45:00.0",
+          "activityLevel": 0.798608745322196
+        },
+        {
+          "startGMT": "2026-07-30T03:45:00.0",
+          "endGMT": "2026-07-30T03:46:00.0",
+          "activityLevel": 0.7372038979892632
+        },
+        {
+          "startGMT": "2026-07-30T03:46:00.0",
+          "endGMT": "2026-07-30T03:47:00.0",
+          "activityLevel": 0.8223222939356928
+        },
+        {
+          "startGMT": "2026-07-30T03:47:00.0",
+          "endGMT": "2026-07-30T03:48:00.0",
+          "activityLevel": 0.9902016875702409
+        },
+        {
+          "startGMT": "2026-07-30T03:48:00.0",
+          "endGMT": "2026-07-30T03:49:00.0",
+          "activityLevel": 1.2064469914532856
+        },
+        {
+          "startGMT": "2026-07-30T03:49:00.0",
+          "endGMT": "2026-07-30T03:50:00.0",
+          "activityLevel": 1.445483020340247
+        },
+        {
+          "startGMT": "2026-07-30T03:50:00.0",
+          "endGMT": "2026-07-30T03:51:00.0",
+          "activityLevel": 1.6906119334009901
+        },
+        {
+          "startGMT": "2026-07-30T03:51:00.0",
+          "endGMT": "2026-07-30T03:52:00.0",
+          "activityLevel": 1.9301439004979772
+        },
+        {
+          "startGMT": "2026-07-30T03:52:00.0",
+          "endGMT": "2026-07-30T03:53:00.0",
+          "activityLevel": 2.1531614867752875
+        },
+        {
+          "startGMT": "2026-07-30T03:53:00.0",
+          "endGMT": "2026-07-30T03:54:00.0",
+          "activityLevel": 2.3546052822244143
+        },
+        {
+          "startGMT": "2026-07-30T03:54:00.0",
+          "endGMT": "2026-07-30T03:55:00.0",
+          "activityLevel": 2.5281685733239785
+        },
+        {
+          "startGMT": "2026-07-30T03:55:00.0",
+          "endGMT": "2026-07-30T03:56:00.0",
+          "activityLevel": 2.6671932831576046
+        },
+        {
+          "startGMT": "2026-07-30T03:56:00.0",
+          "endGMT": "2026-07-30T03:57:00.0",
+          "activityLevel": 2.770795500886674
+        },
+        {
+          "startGMT": "2026-07-30T03:57:00.0",
+          "endGMT": "2026-07-30T03:58:00.0",
+          "activityLevel": 2.8343742832020995
+        },
+        {
+          "startGMT": "2026-07-30T03:58:00.0",
+          "endGMT": "2026-07-30T03:59:00.0",
+          "activityLevel": 2.8562362743451315
+        },
+        {
+          "startGMT": "2026-07-30T03:59:00.0",
+          "endGMT": "2026-07-30T04:00:00.0",
+          "activityLevel": 2.836099002242987
+        },
+        {
+          "startGMT": "2026-07-30T04:00:00.0",
+          "endGMT": "2026-07-30T04:01:00.0",
+          "activityLevel": 2.7751151013592277
+        },
+        {
+          "startGMT": "2026-07-30T04:01:00.0",
+          "endGMT": "2026-07-30T04:02:00.0",
+          "activityLevel": 2.675703148212654
+        },
+        {
+          "startGMT": "2026-07-30T04:02:00.0",
+          "endGMT": "2026-07-30T04:03:00.0",
+          "activityLevel": 2.5422032113337143
+        },
+        {
+          "startGMT": "2026-07-30T04:03:00.0",
+          "endGMT": "2026-07-30T04:04:00.0",
+          "activityLevel": 2.3795959180938175
+        },
+        {
+          "startGMT": "2026-07-30T04:04:00.0",
+          "endGMT": "2026-07-30T04:05:00.0",
+          "activityLevel": 2.19408995994548
+        },
+        {
+          "startGMT": "2026-07-30T04:05:00.0",
+          "endGMT": "2026-07-30T04:06:00.0",
+          "activityLevel": 1.992746764596899
+        },
+        {
+          "startGMT": "2026-07-30T04:06:00.0",
+          "endGMT": "2026-07-30T04:07:00.0",
+          "activityLevel": 1.7832619258546392
+        },
+        {
+          "startGMT": "2026-07-30T04:07:00.0",
+          "endGMT": "2026-07-30T04:08:00.0",
+          "activityLevel": 1.5740408651856013
+        },
+        {
+          "startGMT": "2026-07-30T04:08:00.0",
+          "endGMT": "2026-07-30T04:09:00.0",
+          "activityLevel": 1.3726328352931894
+        },
+        {
+          "startGMT": "2026-07-30T04:09:00.0",
+          "endGMT": "2026-07-30T04:10:00.0",
+          "activityLevel": 1.1905665728636983
+        },
+        {
+          "startGMT": "2026-07-30T04:10:00.0",
+          "endGMT": "2026-07-30T04:11:00.0",
+          "activityLevel": 1.0319357195552952
+        },
+        {
+          "startGMT": "2026-07-30T04:11:00.0",
+          "endGMT": "2026-07-30T04:12:00.0",
+          "activityLevel": 0.9009741062810607
+        },
+        {
+          "startGMT": "2026-07-30T04:12:00.0",
+          "endGMT": "2026-07-30T04:13:00.0",
+          "activityLevel": 0.7989414962907679
+        },
+        {
+          "startGMT": "2026-07-30T04:13:00.0",
+          "endGMT": "2026-07-30T04:14:00.0",
+          "activityLevel": 0.7231058512942417
+        },
+        {
+          "startGMT": "2026-07-30T04:14:00.0",
+          "endGMT": "2026-07-30T04:15:00.0",
+          "activityLevel": 0.7074775864236902
+        },
+        {
+          "startGMT": "2026-07-30T04:15:00.0",
+          "endGMT": "2026-07-30T04:16:00.0",
+          "activityLevel": 0.6513283487299842
+        },
+        {
+          "startGMT": "2026-07-30T04:16:00.0",
+          "endGMT": "2026-07-30T04:17:00.0",
+          "activityLevel": 0.5884903798232032
+        },
+        {
+          "startGMT": "2026-07-30T04:17:00.0",
+          "endGMT": "2026-07-30T04:18:00.0",
+          "activityLevel": 0.5209969218087972
+        },
+        {
+          "startGMT": "2026-07-30T04:18:00.0",
+          "endGMT": "2026-07-30T04:19:00.0",
+          "activityLevel": 0.45098219287379737
+        },
+        {
+          "startGMT": "2026-07-30T04:19:00.0",
+          "endGMT": "2026-07-30T04:20:00.0",
+          "activityLevel": 0.3806054693724566
+        },
+        {
+          "startGMT": "2026-07-30T04:20:00.0",
+          "endGMT": "2026-07-30T04:21:00.0",
+          "activityLevel": 0.31079473218172954
+        },
+        {
+          "startGMT": "2026-07-30T04:21:00.0",
+          "endGMT": "2026-07-30T04:22:00.0",
+          "activityLevel": 0.24762750755641225
+        },
+        {
+          "startGMT": "2026-07-30T04:22:00.0",
+          "endGMT": "2026-07-30T04:23:00.0",
+          "activityLevel": 0.19385884819347815
+        },
+        {
+          "startGMT": "2026-07-30T04:23:00.0",
+          "endGMT": "2026-07-30T04:24:00.0",
+          "activityLevel": 0.1552851414626654
+        },
+        {
+          "startGMT": "2026-07-30T04:24:00.0",
+          "endGMT": "2026-07-30T04:25:00.0",
+          "activityLevel": 0.1645793240174962
+        },
+        {
+          "startGMT": "2026-07-30T04:25:00.0",
+          "endGMT": "2026-07-30T04:26:00.0",
+          "activityLevel": 0.1645793240174962
+        },
+        {
+          "startGMT": "2026-07-30T04:26:00.0",
+          "endGMT": "2026-07-30T04:27:00.0",
+          "activityLevel": 0.173267852797061
+        },
+        {
+          "startGMT": "2026-07-30T04:27:00.0",
+          "endGMT": "2026-07-30T04:28:00.0",
+          "activityLevel": 0.18059210435005735
+        },
+        {
+          "startGMT": "2026-07-30T04:28:00.0",
+          "endGMT": "2026-07-30T04:29:00.0",
+          "activityLevel": 0.21004562770334687
+        },
+        {
+          "startGMT": "2026-07-30T04:29:00.0",
+          "endGMT": "2026-07-30T04:30:00.0",
+          "activityLevel": 0.2468444745039617
+        },
+        {
+          "startGMT": "2026-07-30T04:30:00.0",
+          "endGMT": "2026-07-30T04:31:00.0",
+          "activityLevel": 0.2900815625508729
+        },
+        {
+          "startGMT": "2026-07-30T04:31:00.0",
+          "endGMT": "2026-07-30T04:32:00.0",
+          "activityLevel": 0.3336726445683599
+        },
+        {
+          "startGMT": "2026-07-30T04:32:00.0",
+          "endGMT": "2026-07-30T04:33:00.0",
+          "activityLevel": 0.3779234359432106
+        },
+        {
+          "startGMT": "2026-07-30T04:33:00.0",
+          "endGMT": "2026-07-30T04:34:00.0",
+          "activityLevel": 0.42153462808483244
+        },
+        {
+          "startGMT": "2026-07-30T04:34:00.0",
+          "endGMT": "2026-07-30T04:35:00.0",
+          "activityLevel": 0.46315267661295445
+        },
+        {
+          "startGMT": "2026-07-30T04:35:00.0",
+          "endGMT": "2026-07-30T04:36:00.0",
+          "activityLevel": 0.501427393414211
+        },
+        {
+          "startGMT": "2026-07-30T04:36:00.0",
+          "endGMT": "2026-07-30T04:37:00.0",
+          "activityLevel": 0.5350676190776994
+        },
+        {
+          "startGMT": "2026-07-30T04:37:00.0",
+          "endGMT": "2026-07-30T04:38:00.0",
+          "activityLevel": 0.5628939040430789
+        },
+        {
+          "startGMT": "2026-07-30T04:38:00.0",
+          "endGMT": "2026-07-30T04:39:00.0",
+          "activityLevel": 0.5838866371619889
+        },
+        {
+          "startGMT": "2026-07-30T04:39:00.0",
+          "endGMT": "2026-07-30T04:40:00.0",
+          "activityLevel": 0.597227889471663
+        },
+        {
+          "startGMT": "2026-07-30T04:40:00.0",
+          "endGMT": "2026-07-30T04:41:00.0",
+          "activityLevel": 0.6023352995656654
+        },
+        {
+          "startGMT": "2026-07-30T04:41:00.0",
+          "endGMT": "2026-07-30T04:42:00.0",
+          "activityLevel": 0.5988865474464057
+        },
+        {
+          "startGMT": "2026-07-30T04:42:00.0",
+          "endGMT": "2026-07-30T04:43:00.0",
+          "activityLevel": 0.5868332949441195
+        },
+        {
+          "startGMT": "2026-07-30T04:43:00.0",
+          "endGMT": "2026-07-30T04:44:00.0",
+          "activityLevel": 0.5664038696682677
+        },
+        {
+          "startGMT": "2026-07-30T04:44:00.0",
+          "endGMT": "2026-07-30T04:45:00.0",
+          "activityLevel": 0.535342357618487
+        },
+        {
+          "startGMT": "2026-07-30T04:45:00.0",
+          "endGMT": "2026-07-30T04:46:00.0",
+          "activityLevel": 0.5007076406168134
+        },
+        {
+          "startGMT": "2026-07-30T04:46:00.0",
+          "endGMT": "2026-07-30T04:47:00.0",
+          "activityLevel": 0.47108017514058265
+        },
+        {
+          "startGMT": "2026-07-30T04:47:00.0",
+          "endGMT": "2026-07-30T04:48:00.0",
+          "activityLevel": 0.4510342513102813
+        },
+        {
+          "startGMT": "2026-07-30T04:48:00.0",
+          "endGMT": "2026-07-30T04:49:00.0",
+          "activityLevel": 0.44568433798650137
+        },
+        {
+          "startGMT": "2026-07-30T04:49:00.0",
+          "endGMT": "2026-07-30T04:50:00.0",
+          "activityLevel": 0.46004962266893334
+        },
+        {
+          "startGMT": "2026-07-30T04:50:00.0",
+          "endGMT": "2026-07-30T04:51:00.0",
+          "activityLevel": 0.4916165970985886
+        },
+        {
+          "startGMT": "2026-07-30T04:51:00.0",
+          "endGMT": "2026-07-30T04:52:00.0",
+          "activityLevel": 0.5376977865264874
+        },
+        {
+          "startGMT": "2026-07-30T04:52:00.0",
+          "endGMT": "2026-07-30T04:53:00.0",
+          "activityLevel": 0.5921821361710095
+        },
+        {
+          "startGMT": "2026-07-30T04:53:00.0",
+          "endGMT": "2026-07-30T04:54:00.0",
+          "activityLevel": 0.65142804295204
+        },
+        {
+          "startGMT": "2026-07-30T04:54:00.0",
+          "endGMT": "2026-07-30T04:55:00.0",
+          "activityLevel": 0.7095576825843704
+        },
+        {
+          "startGMT": "2026-07-30T04:55:00.0",
+          "endGMT": "2026-07-30T04:56:00.0",
+          "activityLevel": 0.7625137300756342
+        },
+        {
+          "startGMT": "2026-07-30T04:56:00.0",
+          "endGMT": "2026-07-30T04:57:00.0",
+          "activityLevel": 0.8095829065040467
+        },
+        {
+          "startGMT": "2026-07-30T04:57:00.0",
+          "endGMT": "2026-07-30T04:58:00.0",
+          "activityLevel": 0.842941370552163
+        },
+        {
+          "startGMT": "2026-07-30T04:58:00.0",
+          "endGMT": "2026-07-30T04:59:00.0",
+          "activityLevel": 0.8635827283926596
+        },
+        {
+          "startGMT": "2026-07-30T04:59:00.0",
+          "endGMT": "2026-07-30T05:00:00.0",
+          "activityLevel": 0.8709759108192178
+        },
+        {
           "startGMT": "2026-07-30T05:00:00.0",
           "endGMT": "2026-07-30T05:01:00.0",
-          "activityLevel": 5.5259526333895845
+          "activityLevel": 0.8650231667418232
         },
         {
           "startGMT": "2026-07-30T05:01:00.0",
           "endGMT": "2026-07-30T05:02:00.0",
-          "activityLevel": 5.042062469319776
+          "activityLevel": 0.8443177340570782
         },
         {
           "startGMT": "2026-07-30T05:02:00.0",
           "endGMT": "2026-07-30T05:03:00.0",
-          "activityLevel": 4.534624268961974
+          "activityLevel": 0.8136735491887579
         },
         {
           "startGMT": "2026-07-30T05:03:00.0",
           "endGMT": "2026-07-30T05:04:00.0",
-          "activityLevel": 4.0133737063658845
+          "activityLevel": 0.7772157078957823
         },
         {
           "startGMT": "2026-07-30T05:04:00.0",
           "endGMT": "2026-07-30T05:05:00.0",
-          "activityLevel": 3.489664869234952
+          "activityLevel": 0.7429654279325829
         },
         {
           "startGMT": "2026-07-30T05:05:00.0",
           "endGMT": "2026-07-30T05:06:00.0",
-          "activityLevel": 2.9746866128100287
+          "activityLevel": 0.7142809989065333
         },
         {
           "startGMT": "2026-07-30T05:06:00.0",
           "endGMT": "2026-07-30T05:07:00.0",
-          "activityLevel": 2.4809317355352163
+          "activityLevel": 0.6969960354064949
         },
         {
           "startGMT": "2026-07-30T05:07:00.0",
           "endGMT": "2026-07-30T05:08:00.0",
-          "activityLevel": 2.022064796292451
+          "activityLevel": 0.6955795570937245
         },
         {
           "startGMT": "2026-07-30T05:08:00.0",
           "endGMT": "2026-07-30T05:09:00.0",
-          "activityLevel": 1.6137741331422282
+          "activityLevel": 0.7116666542325599
         },
         {
           "startGMT": "2026-07-30T05:09:00.0",
           "endGMT": "2026-07-30T05:10:00.0",
-          "activityLevel": 1.2752192501648172
+          "activityLevel": 0.7434605243587253
         },
         {
           "startGMT": "2026-07-30T05:10:00.0",
           "endGMT": "2026-07-30T05:11:00.0",
-          "activityLevel": 1.0293914680151124
+          "activityLevel": 0.7864581063823781
         },
         {
           "startGMT": "2026-07-30T05:11:00.0",
           "endGMT": "2026-07-30T05:12:00.0",
-          "activityLevel": 0.8952279321283093
+          "activityLevel": 0.8348919231591722
         },
         {
           "startGMT": "2026-07-30T05:12:00.0",
           "endGMT": "2026-07-30T05:13:00.0",
-          "activityLevel": 0.8662947586164688
+          "activityLevel": 0.8829929789596211
         },
         {
           "startGMT": "2026-07-30T05:13:00.0",
           "endGMT": "2026-07-30T05:14:00.0",
-          "activityLevel": 0.9036646139642811
+          "activityLevel": 0.9278587106531323
         },
         {
           "startGMT": "2026-07-30T05:14:00.0",
@@ -2386,72 +2971,267 @@
         {
           "startGMT": "2026-07-30T12:29:00.0",
           "endGMT": "2026-07-30T12:30:00.0",
-          "activityLevel": 2.2233873230449555
+          "activityLevel": 2.231345071968913
         },
         {
           "startGMT": "2026-07-30T12:30:00.0",
           "endGMT": "2026-07-30T12:31:00.0",
-          "activityLevel": 2.4776618606498637
+          "activityLevel": 2.475222545038021
         },
         {
           "startGMT": "2026-07-30T12:31:00.0",
           "endGMT": "2026-07-30T12:32:00.0",
-          "activityLevel": 2.7777298887762734
+          "activityLevel": 2.7644151012662554
         },
         {
           "startGMT": "2026-07-30T12:32:00.0",
           "endGMT": "2026-07-30T12:33:00.0",
-          "activityLevel": 3.1179164942550006
+          "activityLevel": 3.0725776684622237
         },
         {
           "startGMT": "2026-07-30T12:33:00.0",
           "endGMT": "2026-07-30T12:34:00.0",
-          "activityLevel": 3.490476473868896
+          "activityLevel": 3.4022948995393447
         },
         {
           "startGMT": "2026-07-30T12:34:00.0",
           "endGMT": "2026-07-30T12:35:00.0",
-          "activityLevel": 3.886590824737268
+          "activityLevel": 3.746388723856984
         },
         {
           "startGMT": "2026-07-30T12:35:00.0",
           "endGMT": "2026-07-30T12:36:00.0",
-          "activityLevel": 4.2970639692470645
+          "activityLevel": 4.098015323855733
         },
         {
           "startGMT": "2026-07-30T12:36:00.0",
           "endGMT": "2026-07-30T12:37:00.0",
-          "activityLevel": 4.71321650115306
+          "activityLevel": 4.451385545194204
         },
         {
           "startGMT": "2026-07-30T12:37:00.0",
           "endGMT": "2026-07-30T12:38:00.0",
-          "activityLevel": 5.125811742058928
+          "activityLevel": 4.804741029711063
         },
         {
           "startGMT": "2026-07-30T12:38:00.0",
           "endGMT": "2026-07-30T12:39:00.0",
-          "activityLevel": 5.526461207510333
+          "activityLevel": 5.1427429276617165
         },
         {
           "startGMT": "2026-07-30T12:39:00.0",
           "endGMT": "2026-07-30T12:40:00.0",
-          "activityLevel": 5.908565787033889
+          "activityLevel": 5.457923853638743
         },
         {
           "startGMT": "2026-07-30T12:40:00.0",
           "endGMT": "2026-07-30T12:41:00.0",
-          "activityLevel": 6.267450317125486
+          "activityLevel": 5.744063382745048
         },
         {
           "startGMT": "2026-07-30T12:41:00.0",
           "endGMT": "2026-07-30T12:42:00.0",
-          "activityLevel": 6.595474413641681
+          "activityLevel": 5.990908842306903
         },
         {
           "startGMT": "2026-07-30T12:42:00.0",
           "endGMT": "2026-07-30T12:43:00.0",
-          "activityLevel": 6.8904392499449605
+          "activityLevel": 6.193424622990048
+        },
+        {
+          "startGMT": "2026-07-30T12:43:00.0",
+          "endGMT": "2026-07-30T12:44:00.0",
+          "activityLevel": 6.342992858355669
+        },
+        {
+          "startGMT": "2026-07-30T12:44:00.0",
+          "endGMT": "2026-07-30T12:45:00.0",
+          "activityLevel": 6.446141972526676
+        },
+        {
+          "startGMT": "2026-07-30T12:45:00.0",
+          "endGMT": "2026-07-30T12:46:00.0",
+          "activityLevel": 6.497153232669941
+        },
+        {
+          "startGMT": "2026-07-30T12:46:00.0",
+          "endGMT": "2026-07-30T12:47:00.0",
+          "activityLevel": 6.494321334303074
+        },
+        {
+          "startGMT": "2026-07-30T12:47:00.0",
+          "endGMT": "2026-07-30T12:48:00.0",
+          "activityLevel": 6.436517986277736
+        },
+        {
+          "startGMT": "2026-07-30T12:48:00.0",
+          "endGMT": "2026-07-30T12:49:00.0",
+          "activityLevel": 6.336169545348339
+        },
+        {
+          "startGMT": "2026-07-30T12:49:00.0",
+          "endGMT": "2026-07-30T12:50:00.0",
+          "activityLevel": 6.194028587665147
+        },
+        {
+          "startGMT": "2026-07-30T12:50:00.0",
+          "endGMT": "2026-07-30T12:51:00.0",
+          "activityLevel": 6.024145395355994
+        },
+        {
+          "startGMT": "2026-07-30T12:51:00.0",
+          "endGMT": "2026-07-30T12:52:00.0",
+          "activityLevel": 5.840520963528198
+        },
+        {
+          "startGMT": "2026-07-30T12:52:00.0",
+          "endGMT": "2026-07-30T12:53:00.0",
+          "activityLevel": 5.659989723296852
+        },
+        {
+          "startGMT": "2026-07-30T12:53:00.0",
+          "endGMT": "2026-07-30T12:54:00.0",
+          "activityLevel": 5.5063428762824085
+        },
+        {
+          "startGMT": "2026-07-30T12:54:00.0",
+          "endGMT": "2026-07-30T12:55:00.0",
+          "activityLevel": 5.392083064972902
+        },
+        {
+          "startGMT": "2026-07-30T12:55:00.0",
+          "endGMT": "2026-07-30T12:56:00.0",
+          "activityLevel": 5.329360927998663
+        },
+        {
+          "startGMT": "2026-07-30T12:56:00.0",
+          "endGMT": "2026-07-30T12:57:00.0",
+          "activityLevel": 5.326568277761194
+        },
+        {
+          "startGMT": "2026-07-30T12:57:00.0",
+          "endGMT": "2026-07-30T12:58:00.0",
+          "activityLevel": 5.3897972831403145
+        },
+        {
+          "startGMT": "2026-07-30T12:58:00.0",
+          "endGMT": "2026-07-30T12:59:00.0",
+          "activityLevel": 5.5009536081820185
+        },
+        {
+          "startGMT": "2026-07-30T12:59:00.0",
+          "endGMT": "2026-07-30T13:00:00.0",
+          "activityLevel": 5.654097241353965
+        },
+        {
+          "startGMT": "2026-07-30T13:00:00.0",
+          "endGMT": "2026-07-30T13:01:00.0",
+          "activityLevel": 5.822143060453805
+        },
+        {
+          "startGMT": "2026-07-30T13:01:00.0",
+          "endGMT": "2026-07-30T13:02:00.0",
+          "activityLevel": 5.9914965908796445
+        },
+        {
+          "startGMT": "2026-07-30T13:02:00.0",
+          "endGMT": "2026-07-30T13:03:00.0",
+          "activityLevel": 6.150518360880026
+        },
+        {
+          "startGMT": "2026-07-30T13:03:00.0",
+          "endGMT": "2026-07-30T13:04:00.0",
+          "activityLevel": 6.279661115525025
+        },
+        {
+          "startGMT": "2026-07-30T13:04:00.0",
+          "endGMT": "2026-07-30T13:05:00.0",
+          "activityLevel": 6.367979502415247
+        },
+        {
+          "startGMT": "2026-07-30T13:05:00.0",
+          "endGMT": "2026-07-30T13:06:00.0",
+          "activityLevel": 6.408811825832377
+        },
+        {
+          "startGMT": "2026-07-30T13:06:00.0",
+          "endGMT": "2026-07-30T13:07:00.0",
+          "activityLevel": 6.389495294504989
+        },
+        {
+          "startGMT": "2026-07-30T13:07:00.0",
+          "endGMT": "2026-07-30T13:08:00.0",
+          "activityLevel": 6.322773385092472
+        },
+        {
+          "startGMT": "2026-07-30T13:08:00.0",
+          "endGMT": "2026-07-30T13:09:00.0",
+          "activityLevel": 6.216518190291522
+        },
+        {
+          "startGMT": "2026-07-30T13:09:00.0",
+          "endGMT": "2026-07-30T13:10:00.0",
+          "activityLevel": 6.082019575507259
+        },
+        {
+          "startGMT": "2026-07-30T13:10:00.0",
+          "endGMT": "2026-07-30T13:11:00.0",
+          "activityLevel": 5.933776865732321
+        },
+        {
+          "startGMT": "2026-07-30T13:11:00.0",
+          "endGMT": "2026-07-30T13:12:00.0",
+          "activityLevel": 5.7888792959632305
+        },
+        {
+          "startGMT": "2026-07-30T13:12:00.0",
+          "endGMT": "2026-07-30T13:13:00.0",
+          "activityLevel": 5.670701301823535
+        },
+        {
+          "startGMT": "2026-07-30T13:13:00.0",
+          "endGMT": "2026-07-30T13:14:00.0",
+          "activityLevel": 5.586447208270542
+        },
+        {
+          "startGMT": "2026-07-30T13:14:00.0",
+          "endGMT": "2026-07-30T13:15:00.0",
+          "activityLevel": 5.555627551415649
+        },
+        {
+          "startGMT": "2026-07-30T13:15:00.0",
+          "endGMT": "2026-07-30T13:16:00.0",
+          "activityLevel": 5.588276443681442
+        },
+        {
+          "startGMT": "2026-07-30T13:16:00.0",
+          "endGMT": "2026-07-30T13:17:00.0",
+          "activityLevel": 5.691599702554902
+        },
+        {
+          "startGMT": "2026-07-30T13:17:00.0",
+          "endGMT": "2026-07-30T13:18:00.0",
+          "activityLevel": 5.849954549231963
+        },
+        {
+          "startGMT": "2026-07-30T13:18:00.0",
+          "endGMT": "2026-07-30T13:19:00.0",
+          "activityLevel": 6.059805907151202
+        },
+        {
+          "startGMT": "2026-07-30T13:19:00.0",
+          "endGMT": "2026-07-30T13:20:00.0",
+          "activityLevel": 6.301817010077803
+        },
+        {
+          "startGMT": "2026-07-30T13:20:00.0",
+          "endGMT": "2026-07-30T13:21:00.0",
+          "activityLevel": 6.559778574581376
+        },
+        {
+          "startGMT": "2026-07-30T13:21:00.0",
+          "endGMT": "2026-07-30T13:22:00.0",
+          "activityLevel": 6.819086068015122
         }
       ],
       "remSleepData": true,
@@ -2774,6 +3554,122 @@
       ],
       "restlessMomentsCount": 51,
       "wellnessEpochRespirationDataDTOList": [
+        {
+          "startTimeGMT": 1785384212000,
+          "respirationValue": 15.0
+        },
+        {
+          "startTimeGMT": 1785384240000,
+          "respirationValue": 18.0
+        },
+        {
+          "startTimeGMT": 1785384360000,
+          "respirationValue": 17.0
+        },
+        {
+          "startTimeGMT": 1785384480000,
+          "respirationValue": 16.0
+        },
+        {
+          "startTimeGMT": 1785384600000,
+          "respirationValue": 15.0
+        },
+        {
+          "startTimeGMT": 1785384720000,
+          "respirationValue": 17.0
+        },
+        {
+          "startTimeGMT": 1785384840000,
+          "respirationValue": 18.0
+        },
+        {
+          "startTimeGMT": 1785384960000,
+          "respirationValue": 16.0
+        },
+        {
+          "startTimeGMT": 1785385080000,
+          "respirationValue": 16.0
+        },
+        {
+          "startTimeGMT": 1785385200000,
+          "respirationValue": 16.0
+        },
+        {
+          "startTimeGMT": 1785385320000,
+          "respirationValue": -2.0
+        },
+        {
+          "startTimeGMT": 1785385440000,
+          "respirationValue": -2.0
+        },
+        {
+          "startTimeGMT": 1785385560000,
+          "respirationValue": 17.0
+        },
+        {
+          "startTimeGMT": 1785385680000,
+          "respirationValue": 13.0
+        },
+        {
+          "startTimeGMT": 1785385800000,
+          "respirationValue": 13.0
+        },
+        {
+          "startTimeGMT": 1785385920000,
+          "respirationValue": 11.0
+        },
+        {
+          "startTimeGMT": 1785386040000,
+          "respirationValue": 16.0
+        },
+        {
+          "startTimeGMT": 1785386160000,
+          "respirationValue": 18.0
+        },
+        {
+          "startTimeGMT": 1785386280000,
+          "respirationValue": 19.0
+        },
+        {
+          "startTimeGMT": 1785386400000,
+          "respirationValue": 18.0
+        },
+        {
+          "startTimeGMT": 1785386520000,
+          "respirationValue": 14.0
+        },
+        {
+          "startTimeGMT": 1785386640000,
+          "respirationValue": 17.0
+        },
+        {
+          "startTimeGMT": 1785386760000,
+          "respirationValue": 19.0
+        },
+        {
+          "startTimeGMT": 1785386880000,
+          "respirationValue": 19.0
+        },
+        {
+          "startTimeGMT": 1785387000000,
+          "respirationValue": 17.0
+        },
+        {
+          "startTimeGMT": 1785387120000,
+          "respirationValue": 19.0
+        },
+        {
+          "startTimeGMT": 1785387240000,
+          "respirationValue": 18.0
+        },
+        {
+          "startTimeGMT": 1785387360000,
+          "respirationValue": 21.0
+        },
+        {
+          "startTimeGMT": 1785387480000,
+          "respirationValue": 17.0
+        },
         {
           "startTimeGMT": 1785387600000,
           "respirationValue": 17.0
@@ -3661,6 +4557,12 @@
       ],
       "wellnessEpochRespirationAveragesList": [
         {
+          "epochEndTimestampGmt": 1785387600000,
+          "respirationAverageValue": 16.8,
+          "respirationHighValue": 22.0,
+          "respirationLowValue": 9.0
+        },
+        {
           "epochEndTimestampGmt": 1785391200000,
           "respirationAverageValue": 17.94,
           "respirationHighValue": 22.0,
@@ -3711,6 +4613,122 @@
       ],
       "respirationVersion": 200,
       "sleepHeartRate": [
+        {
+          "value": 72,
+          "startGMT": 1785384120000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785384240000
+        },
+        {
+          "value": 68,
+          "startGMT": 1785384360000
+        },
+        {
+          "value": 68,
+          "startGMT": 1785384480000
+        },
+        {
+          "value": 67,
+          "startGMT": 1785384600000
+        },
+        {
+          "value": 65,
+          "startGMT": 1785384720000
+        },
+        {
+          "value": 67,
+          "startGMT": 1785384840000
+        },
+        {
+          "value": 67,
+          "startGMT": 1785384960000
+        },
+        {
+          "value": 67,
+          "startGMT": 1785385080000
+        },
+        {
+          "value": 66,
+          "startGMT": 1785385200000
+        },
+        {
+          "value": 67,
+          "startGMT": 1785385320000
+        },
+        {
+          "value": 68,
+          "startGMT": 1785385440000
+        },
+        {
+          "value": 69,
+          "startGMT": 1785385560000
+        },
+        {
+          "value": 68,
+          "startGMT": 1785385680000
+        },
+        {
+          "value": 68,
+          "startGMT": 1785385800000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785385920000
+        },
+        {
+          "value": 71,
+          "startGMT": 1785386040000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785386160000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785386280000
+        },
+        {
+          "value": 69,
+          "startGMT": 1785386400000
+        },
+        {
+          "value": 74,
+          "startGMT": 1785386520000
+        },
+        {
+          "value": 68,
+          "startGMT": 1785386640000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785386760000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785386880000
+        },
+        {
+          "value": 70,
+          "startGMT": 1785387000000
+        },
+        {
+          "value": 69,
+          "startGMT": 1785387120000
+        },
+        {
+          "value": 71,
+          "startGMT": 1785387240000
+        },
+        {
+          "value": 72,
+          "startGMT": 1785387360000
+        },
+        {
+          "value": 72,
+          "startGMT": 1785387480000
+        },
         {
           "value": 65,
           "startGMT": 1785387600000
@@ -4602,6 +5620,82 @@
       ],
       "sleepStress": [
         {
+          "value": 24,
+          "startGMT": 1785384180000
+        },
+        {
+          "value": 17,
+          "startGMT": 1785384360000
+        },
+        {
+          "value": 13,
+          "startGMT": 1785384540000
+        },
+        {
+          "value": 23,
+          "startGMT": 1785384720000
+        },
+        {
+          "value": 13,
+          "startGMT": 1785384900000
+        },
+        {
+          "value": 17,
+          "startGMT": 1785385080000
+        },
+        {
+          "value": 21,
+          "startGMT": 1785385260000
+        },
+        {
+          "value": 20,
+          "startGMT": 1785385440000
+        },
+        {
+          "value": 18,
+          "startGMT": 1785385620000
+        },
+        {
+          "value": 21,
+          "startGMT": 1785385800000
+        },
+        {
+          "value": 23,
+          "startGMT": 1785385980000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785386160000
+        },
+        {
+          "value": 28,
+          "startGMT": 1785386340000
+        },
+        {
+          "value": 20,
+          "startGMT": 1785386520000
+        },
+        {
+          "value": 27,
+          "startGMT": 1785386700000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785386880000
+        },
+        {
+          "value": 28,
+          "startGMT": 1785387060000
+        },
+        {
+          "value": 28,
+          "startGMT": 1785387240000
+        },
+        {
+          "value": 21,
+          "startGMT": 1785387420000
+        },
+        {
           "value": 22,
           "startGMT": 1785387600000
         },
@@ -5195,6 +6289,82 @@
         }
       ],
       "sleepBodyBattery": [
+        {
+          "value": 24,
+          "startGMT": 1785384180000
+        },
+        {
+          "value": 24,
+          "startGMT": 1785384360000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785384540000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785384720000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785384900000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785385080000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785385260000
+        },
+        {
+          "value": 25,
+          "startGMT": 1785385440000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785385620000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785385800000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785385980000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785386160000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785386340000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785386520000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785386700000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785386880000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785387060000
+        },
+        {
+          "value": 26,
+          "startGMT": 1785387240000
+        },
+        {
+          "value": 27,
+          "startGMT": 1785387420000
+        },
         {
           "value": 27,
           "startGMT": 1785387600000
@@ -6740,11 +7910,11 @@
       "userProfilePK": 144256603,
       "calendarDate": "2026-07-30",
       "startTimestampGMT": "2026-07-30T05:00:00.0",
-      "endTimestampGMT": "2026-07-30T12:43:00.0",
+      "endTimestampGMT": "2026-07-31T05:00:00.0",
       "startTimestampLocal": "2026-07-30T00:00:00.0",
-      "endTimestampLocal": "2026-07-30T07:43:00.0",
-      "maxStressLevel": 32,
-      "avgStressLevel": 20,
+      "endTimestampLocal": "2026-07-31T00:00:00.0",
+      "maxStressLevel": 82,
+      "avgStressLevel": 25,
       "stressChartValueOffset": 1,
       "stressChartYAxisOrigin": -1,
       "stressValueDescriptorsDTOList": [
@@ -7376,7 +8546,1191 @@
         ],
         [
           1785415320000,
+          -1
+        ],
+        [
+          1785415500000,
+          -2
+        ],
+        [
+          1785415680000,
+          -2
+        ],
+        [
+          1785415860000,
+          25
+        ],
+        [
+          1785416040000,
+          35
+        ],
+        [
+          1785416220000,
+          24
+        ],
+        [
+          1785416400000,
+          28
+        ],
+        [
+          1785416580000,
+          -2
+        ],
+        [
+          1785416760000,
+          -1
+        ],
+        [
+          1785416940000,
+          -1
+        ],
+        [
+          1785417120000,
+          19
+        ],
+        [
+          1785417300000,
+          26
+        ],
+        [
+          1785417480000,
+          28
+        ],
+        [
+          1785417660000,
+          32
+        ],
+        [
+          1785417840000,
+          31
+        ],
+        [
+          1785418020000,
+          44
+        ],
+        [
+          1785418200000,
+          -1
+        ],
+        [
+          1785418380000,
+          28
+        ],
+        [
+          1785418560000,
+          34
+        ],
+        [
+          1785418740000,
+          25
+        ],
+        [
+          1785418920000,
+          23
+        ],
+        [
+          1785419100000,
+          20
+        ],
+        [
+          1785419280000,
+          25
+        ],
+        [
+          1785419460000,
+          18
+        ],
+        [
+          1785419640000,
+          25
+        ],
+        [
+          1785419820000,
+          29
+        ],
+        [
+          1785420000000,
+          29
+        ],
+        [
+          1785420180000,
+          26
+        ],
+        [
+          1785420360000,
+          20
+        ],
+        [
+          1785420540000,
           22
+        ],
+        [
+          1785420720000,
+          24
+        ],
+        [
+          1785420900000,
+          22
+        ],
+        [
+          1785421080000,
+          26
+        ],
+        [
+          1785421260000,
+          20
+        ],
+        [
+          1785421440000,
+          29
+        ],
+        [
+          1785421620000,
+          23
+        ],
+        [
+          1785421800000,
+          22
+        ],
+        [
+          1785421980000,
+          22
+        ],
+        [
+          1785422160000,
+          15
+        ],
+        [
+          1785422340000,
+          17
+        ],
+        [
+          1785422520000,
+          19
+        ],
+        [
+          1785422700000,
+          15
+        ],
+        [
+          1785422880000,
+          22
+        ],
+        [
+          1785423060000,
+          27
+        ],
+        [
+          1785423240000,
+          20
+        ],
+        [
+          1785423420000,
+          22
+        ],
+        [
+          1785423600000,
+          24
+        ],
+        [
+          1785423780000,
+          22
+        ],
+        [
+          1785423960000,
+          20
+        ],
+        [
+          1785424140000,
+          21
+        ],
+        [
+          1785424320000,
+          21
+        ],
+        [
+          1785424500000,
+          16
+        ],
+        [
+          1785424680000,
+          17
+        ],
+        [
+          1785424860000,
+          18
+        ],
+        [
+          1785425040000,
+          18
+        ],
+        [
+          1785425220000,
+          22
+        ],
+        [
+          1785425400000,
+          15
+        ],
+        [
+          1785425580000,
+          20
+        ],
+        [
+          1785425760000,
+          25
+        ],
+        [
+          1785425940000,
+          -2
+        ],
+        [
+          1785426120000,
+          -1
+        ],
+        [
+          1785426300000,
+          23
+        ],
+        [
+          1785426480000,
+          18
+        ],
+        [
+          1785426660000,
+          15
+        ],
+        [
+          1785426840000,
+          24
+        ],
+        [
+          1785427020000,
+          21
+        ],
+        [
+          1785427200000,
+          18
+        ],
+        [
+          1785427380000,
+          16
+        ],
+        [
+          1785432780000,
+          40
+        ],
+        [
+          1785432960000,
+          37
+        ],
+        [
+          1785433140000,
+          28
+        ],
+        [
+          1785433320000,
+          25
+        ],
+        [
+          1785433500000,
+          24
+        ],
+        [
+          1785433680000,
+          15
+        ],
+        [
+          1785433860000,
+          25
+        ],
+        [
+          1785434040000,
+          23
+        ],
+        [
+          1785434220000,
+          21
+        ],
+        [
+          1785434400000,
+          29
+        ],
+        [
+          1785434580000,
+          28
+        ],
+        [
+          1785434760000,
+          22
+        ],
+        [
+          1785434940000,
+          28
+        ],
+        [
+          1785435120000,
+          35
+        ],
+        [
+          1785435300000,
+          29
+        ],
+        [
+          1785435480000,
+          29
+        ],
+        [
+          1785435660000,
+          28
+        ],
+        [
+          1785435840000,
+          28
+        ],
+        [
+          1785436020000,
+          26
+        ],
+        [
+          1785436200000,
+          25
+        ],
+        [
+          1785436380000,
+          29
+        ],
+        [
+          1785436560000,
+          27
+        ],
+        [
+          1785436740000,
+          24
+        ],
+        [
+          1785436920000,
+          24
+        ],
+        [
+          1785437100000,
+          22
+        ],
+        [
+          1785437280000,
+          27
+        ],
+        [
+          1785437460000,
+          31
+        ],
+        [
+          1785437640000,
+          27
+        ],
+        [
+          1785437820000,
+          31
+        ],
+        [
+          1785438000000,
+          40
+        ],
+        [
+          1785438180000,
+          23
+        ],
+        [
+          1785438360000,
+          20
+        ],
+        [
+          1785438540000,
+          19
+        ],
+        [
+          1785438720000,
+          -1
+        ],
+        [
+          1785438900000,
+          -1
+        ],
+        [
+          1785439080000,
+          -1
+        ],
+        [
+          1785439260000,
+          24
+        ],
+        [
+          1785439440000,
+          23
+        ],
+        [
+          1785439620000,
+          23
+        ],
+        [
+          1785439800000,
+          31
+        ],
+        [
+          1785439980000,
+          19
+        ],
+        [
+          1785440160000,
+          18
+        ],
+        [
+          1785440340000,
+          23
+        ],
+        [
+          1785440520000,
+          20
+        ],
+        [
+          1785440700000,
+          22
+        ],
+        [
+          1785440880000,
+          22
+        ],
+        [
+          1785441060000,
+          20
+        ],
+        [
+          1785441240000,
+          23
+        ],
+        [
+          1785441420000,
+          21
+        ],
+        [
+          1785441600000,
+          20
+        ],
+        [
+          1785441780000,
+          16
+        ],
+        [
+          1785441960000,
+          24
+        ],
+        [
+          1785442140000,
+          25
+        ],
+        [
+          1785442320000,
+          21
+        ],
+        [
+          1785442500000,
+          21
+        ],
+        [
+          1785442680000,
+          23
+        ],
+        [
+          1785442860000,
+          -1
+        ],
+        [
+          1785443040000,
+          -2
+        ],
+        [
+          1785443220000,
+          19
+        ],
+        [
+          1785443400000,
+          25
+        ],
+        [
+          1785443580000,
+          17
+        ],
+        [
+          1785443760000,
+          21
+        ],
+        [
+          1785443940000,
+          24
+        ],
+        [
+          1785444120000,
+          21
+        ],
+        [
+          1785444300000,
+          23
+        ],
+        [
+          1785444480000,
+          21
+        ],
+        [
+          1785444660000,
+          15
+        ],
+        [
+          1785444840000,
+          14
+        ],
+        [
+          1785445020000,
+          21
+        ],
+        [
+          1785445200000,
+          21
+        ],
+        [
+          1785445380000,
+          20
+        ],
+        [
+          1785445560000,
+          21
+        ],
+        [
+          1785445740000,
+          18
+        ],
+        [
+          1785445920000,
+          15
+        ],
+        [
+          1785446100000,
+          15
+        ],
+        [
+          1785446280000,
+          17
+        ],
+        [
+          1785446460000,
+          18
+        ],
+        [
+          1785446640000,
+          15
+        ],
+        [
+          1785446820000,
+          23
+        ],
+        [
+          1785447000000,
+          18
+        ],
+        [
+          1785447180000,
+          19
+        ],
+        [
+          1785447360000,
+          20
+        ],
+        [
+          1785447540000,
+          11
+        ],
+        [
+          1785447720000,
+          12
+        ],
+        [
+          1785447900000,
+          18
+        ],
+        [
+          1785448080000,
+          -1
+        ],
+        [
+          1785448260000,
+          -1
+        ],
+        [
+          1785448440000,
+          23
+        ],
+        [
+          1785448620000,
+          16
+        ],
+        [
+          1785448800000,
+          24
+        ],
+        [
+          1785448980000,
+          35
+        ],
+        [
+          1785449160000,
+          23
+        ],
+        [
+          1785449340000,
+          -1
+        ],
+        [
+          1785449520000,
+          -2
+        ],
+        [
+          1785449700000,
+          -2
+        ],
+        [
+          1785449880000,
+          -2
+        ],
+        [
+          1785450060000,
+          -2
+        ],
+        [
+          1785450240000,
+          -2
+        ],
+        [
+          1785450420000,
+          -2
+        ],
+        [
+          1785450600000,
+          -2
+        ],
+        [
+          1785450780000,
+          -2
+        ],
+        [
+          1785450960000,
+          -2
+        ],
+        [
+          1785451140000,
+          -2
+        ],
+        [
+          1785451320000,
+          -2
+        ],
+        [
+          1785451500000,
+          -2
+        ],
+        [
+          1785451680000,
+          -2
+        ],
+        [
+          1785451860000,
+          -2
+        ],
+        [
+          1785452040000,
+          -2
+        ],
+        [
+          1785452220000,
+          -2
+        ],
+        [
+          1785452400000,
+          -2
+        ],
+        [
+          1785452580000,
+          -2
+        ],
+        [
+          1785452760000,
+          -2
+        ],
+        [
+          1785452940000,
+          -2
+        ],
+        [
+          1785453120000,
+          -2
+        ],
+        [
+          1785453300000,
+          -2
+        ],
+        [
+          1785453480000,
+          -2
+        ],
+        [
+          1785453660000,
+          -2
+        ],
+        [
+          1785453840000,
+          -1
+        ],
+        [
+          1785454020000,
+          -1
+        ],
+        [
+          1785454200000,
+          -1
+        ],
+        [
+          1785454380000,
+          -1
+        ],
+        [
+          1785454560000,
+          20
+        ],
+        [
+          1785454740000,
+          -1
+        ],
+        [
+          1785454920000,
+          -1
+        ],
+        [
+          1785455100000,
+          19
+        ],
+        [
+          1785455280000,
+          18
+        ],
+        [
+          1785455460000,
+          18
+        ],
+        [
+          1785455640000,
+          23
+        ],
+        [
+          1785455820000,
+          18
+        ],
+        [
+          1785456000000,
+          18
+        ],
+        [
+          1785456180000,
+          15
+        ],
+        [
+          1785456360000,
+          13
+        ],
+        [
+          1785456540000,
+          21
+        ],
+        [
+          1785456720000,
+          14
+        ],
+        [
+          1785456900000,
+          -1
+        ],
+        [
+          1785457080000,
+          25
+        ],
+        [
+          1785457260000,
+          23
+        ],
+        [
+          1785457440000,
+          20
+        ],
+        [
+          1785457620000,
+          18
+        ],
+        [
+          1785457800000,
+          15
+        ],
+        [
+          1785457980000,
+          11
+        ],
+        [
+          1785458160000,
+          -2
+        ],
+        [
+          1785458340000,
+          8
+        ],
+        [
+          1785458520000,
+          18
+        ],
+        [
+          1785458700000,
+          21
+        ],
+        [
+          1785458880000,
+          19
+        ],
+        [
+          1785459060000,
+          9
+        ],
+        [
+          1785459240000,
+          11
+        ],
+        [
+          1785459420000,
+          43
+        ],
+        [
+          1785459600000,
+          62
+        ],
+        [
+          1785459780000,
+          58
+        ],
+        [
+          1785459960000,
+          70
+        ],
+        [
+          1785460140000,
+          55
+        ],
+        [
+          1785460320000,
+          57
+        ],
+        [
+          1785460500000,
+          51
+        ],
+        [
+          1785460680000,
+          25
+        ],
+        [
+          1785460860000,
+          55
+        ],
+        [
+          1785461040000,
+          49
+        ],
+        [
+          1785461220000,
+          43
+        ],
+        [
+          1785461400000,
+          44
+        ],
+        [
+          1785461580000,
+          60
+        ],
+        [
+          1785461760000,
+          52
+        ],
+        [
+          1785461940000,
+          67
+        ],
+        [
+          1785462120000,
+          -1
+        ],
+        [
+          1785462300000,
+          70
+        ],
+        [
+          1785462480000,
+          69
+        ],
+        [
+          1785462660000,
+          65
+        ],
+        [
+          1785462840000,
+          64
+        ],
+        [
+          1785463020000,
+          -1
+        ],
+        [
+          1785463200000,
+          49
+        ],
+        [
+          1785463380000,
+          57
+        ],
+        [
+          1785463560000,
+          50
+        ],
+        [
+          1785463740000,
+          -1
+        ],
+        [
+          1785463920000,
+          51
+        ],
+        [
+          1785464100000,
+          56
+        ],
+        [
+          1785464280000,
+          59
+        ],
+        [
+          1785464460000,
+          -2
+        ],
+        [
+          1785464640000,
+          58
+        ],
+        [
+          1785464820000,
+          21
+        ],
+        [
+          1785465000000,
+          57
+        ],
+        [
+          1785465180000,
+          44
+        ],
+        [
+          1785465360000,
+          37
+        ],
+        [
+          1785465540000,
+          36
+        ],
+        [
+          1785465720000,
+          39
+        ],
+        [
+          1785465900000,
+          32
+        ],
+        [
+          1785466080000,
+          35
+        ],
+        [
+          1785466260000,
+          34
+        ],
+        [
+          1785466440000,
+          34
+        ],
+        [
+          1785466620000,
+          38
+        ],
+        [
+          1785466800000,
+          28
+        ],
+        [
+          1785466980000,
+          35
+        ],
+        [
+          1785467160000,
+          40
+        ],
+        [
+          1785467340000,
+          32
+        ],
+        [
+          1785467520000,
+          31
+        ],
+        [
+          1785467700000,
+          33
+        ],
+        [
+          1785467880000,
+          27
+        ],
+        [
+          1785468060000,
+          32
+        ],
+        [
+          1785468240000,
+          25
+        ],
+        [
+          1785468420000,
+          31
+        ],
+        [
+          1785468600000,
+          24
+        ],
+        [
+          1785468780000,
+          19
+        ],
+        [
+          1785468960000,
+          27
+        ],
+        [
+          1785469140000,
+          33
+        ],
+        [
+          1785469320000,
+          34
+        ],
+        [
+          1785469500000,
+          38
+        ],
+        [
+          1785469680000,
+          25
+        ],
+        [
+          1785469860000,
+          25
+        ],
+        [
+          1785470040000,
+          28
+        ],
+        [
+          1785470220000,
+          24
+        ],
+        [
+          1785470400000,
+          28
+        ],
+        [
+          1785470580000,
+          28
+        ],
+        [
+          1785470760000,
+          40
+        ],
+        [
+          1785470940000,
+          39
+        ],
+        [
+          1785471120000,
+          28
+        ],
+        [
+          1785471300000,
+          31
+        ],
+        [
+          1785471480000,
+          31
+        ],
+        [
+          1785471660000,
+          28
+        ],
+        [
+          1785471840000,
+          29
+        ],
+        [
+          1785472020000,
+          26
+        ],
+        [
+          1785472200000,
+          31
+        ],
+        [
+          1785472380000,
+          28
+        ],
+        [
+          1785472560000,
+          28
+        ],
+        [
+          1785472740000,
+          30
+        ],
+        [
+          1785472920000,
+          28
+        ],
+        [
+          1785473100000,
+          35
+        ],
+        [
+          1785473280000,
+          24
+        ],
+        [
+          1785473460000,
+          25
+        ],
+        [
+          1785473640000,
+          30
+        ],
+        [
+          1785473820000,
+          31
         ]
       ],
       "bodyBatteryValueDescriptorsDTOList": [
@@ -8325,7 +10679,1783 @@
         [
           1785415320000,
           "MEASURED",
-          74,
+          73,
+          3.0
+        ],
+        [
+          1785415500000,
+          "MEASURED",
+          73,
+          3.0
+        ],
+        [
+          1785415680000,
+          "MEASURED",
+          73,
+          3.0
+        ],
+        [
+          1785415860000,
+          "MEASURED",
+          73,
+          3.0
+        ],
+        [
+          1785416040000,
+          "MEASURED",
+          73,
+          3.0
+        ],
+        [
+          1785416220000,
+          "MEASURED",
+          73,
+          3.0
+        ],
+        [
+          1785416400000,
+          "MEASURED",
+          73,
+          3.0
+        ],
+        [
+          1785416580000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785416760000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785416940000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785417120000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785417300000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785417480000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785417660000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785417840000,
+          "MEASURED",
+          72,
+          3.0
+        ],
+        [
+          1785418020000,
+          "MEASURED",
+          71,
+          3.0
+        ],
+        [
+          1785418200000,
+          "MEASURED",
+          71,
+          3.0
+        ],
+        [
+          1785418380000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785418560000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785418740000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785418920000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785419100000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785419280000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785419460000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785419640000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785419820000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785420000000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785420180000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785420360000,
+          "MEASURED",
+          70,
+          3.0
+        ],
+        [
+          1785420540000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785420720000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785420900000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785421080000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785421260000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785421440000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785421620000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785421800000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785421980000,
+          "MEASURED",
+          69,
+          3.0
+        ],
+        [
+          1785422160000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785422340000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785422520000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785422700000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785422880000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785423060000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785423240000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785423420000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785423600000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785423780000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785423960000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785424140000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785424320000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785424500000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785424680000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785424860000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785425040000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785425220000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785425400000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785425580000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785425760000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785425940000,
+          "MEASURED",
+          68,
+          3.0
+        ],
+        [
+          1785426120000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785426300000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785426480000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785426660000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785426840000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785427020000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785427200000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785427380000,
+          "MEASURED",
+          67,
+          3.0
+        ],
+        [
+          1785432780000,
+          "MEASURED",
+          62,
+          3.0
+        ],
+        [
+          1785432960000,
+          "MEASURED",
+          62,
+          3.0
+        ],
+        [
+          1785433140000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785433320000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785433500000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785433680000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785433860000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785434040000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785434220000,
+          "MEASURED",
+          61,
+          3.0
+        ],
+        [
+          1785434400000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785434580000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785434760000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785434940000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785435120000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785435300000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785435480000,
+          "MEASURED",
+          60,
+          3.0
+        ],
+        [
+          1785435660000,
+          "MEASURED",
+          59,
+          3.0
+        ],
+        [
+          1785435840000,
+          "MEASURED",
+          59,
+          3.0
+        ],
+        [
+          1785436020000,
+          "MEASURED",
+          59,
+          3.0
+        ],
+        [
+          1785436200000,
+          "MEASURED",
+          59,
+          3.0
+        ],
+        [
+          1785436380000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785436560000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785436740000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785436920000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785437100000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785437280000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785437460000,
+          "MEASURED",
+          58,
+          3.0
+        ],
+        [
+          1785437640000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785437820000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785438000000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785438180000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785438360000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785438540000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785438720000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785438900000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785439080000,
+          "MEASURED",
+          57,
+          3.0
+        ],
+        [
+          1785439260000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785439440000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785439620000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785439800000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785439980000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785440160000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785440340000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785440520000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785440700000,
+          "MEASURED",
+          56,
+          3.0
+        ],
+        [
+          1785440880000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785441060000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785441240000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785441420000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785441600000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785441780000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785441960000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785442140000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785442320000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785442500000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785442680000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785442860000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785443040000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785443220000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785443400000,
+          "MEASURED",
+          55,
+          3.0
+        ],
+        [
+          1785443580000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785443760000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785443940000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785444120000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785444300000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785444480000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785444660000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785444840000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785445020000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785445200000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785445380000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785445560000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785445740000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785445920000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785446100000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785446280000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785446460000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785446640000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785446820000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785447000000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785447180000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785447360000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785447540000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785447720000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785447900000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785448080000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785448260000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785448440000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785448620000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785448800000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785448980000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785449160000,
+          "MEASURED",
+          54,
+          3.0
+        ],
+        [
+          1785449340000,
+          "MEASURED",
+          53,
+          3.0
+        ],
+        [
+          1785449520000,
+          "MEASURED",
+          53,
+          3.0
+        ],
+        [
+          1785449700000,
+          "MEASURED",
+          53,
+          3.0
+        ],
+        [
+          1785449880000,
+          "MEASURED",
+          52,
+          3.0
+        ],
+        [
+          1785450060000,
+          "MEASURED",
+          52,
+          3.0
+        ],
+        [
+          1785450240000,
+          "MEASURED",
+          52,
+          3.0
+        ],
+        [
+          1785450420000,
+          "MEASURED",
+          52,
+          3.0
+        ],
+        [
+          1785450600000,
+          "MEASURED",
+          52,
+          3.0
+        ],
+        [
+          1785450780000,
+          "MEASURED",
+          51,
+          3.0
+        ],
+        [
+          1785450960000,
+          "MEASURED",
+          51,
+          3.0
+        ],
+        [
+          1785451140000,
+          "MEASURED",
+          50,
+          3.0
+        ],
+        [
+          1785451320000,
+          "MEASURED",
+          50,
+          3.0
+        ],
+        [
+          1785451500000,
+          "MEASURED",
+          50,
+          3.0
+        ],
+        [
+          1785451680000,
+          "MEASURED",
+          49,
+          3.0
+        ],
+        [
+          1785451860000,
+          "MEASURED",
+          48,
+          3.0
+        ],
+        [
+          1785452040000,
+          "MEASURED",
+          48,
+          3.0
+        ],
+        [
+          1785452220000,
+          "MEASURED",
+          48,
+          3.0
+        ],
+        [
+          1785452400000,
+          "MEASURED",
+          47,
+          3.0
+        ],
+        [
+          1785452580000,
+          "MEASURED",
+          46,
+          3.0
+        ],
+        [
+          1785452760000,
+          "MEASURED",
+          45,
+          3.0
+        ],
+        [
+          1785452940000,
+          "MEASURED",
+          45,
+          3.0
+        ],
+        [
+          1785453120000,
+          "MEASURED",
+          44,
+          3.0
+        ],
+        [
+          1785453300000,
+          "MEASURED",
+          44,
+          3.0
+        ],
+        [
+          1785453480000,
+          "MEASURED",
+          44,
+          3.0
+        ],
+        [
+          1785453660000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785453840000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785454020000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785454200000,
+          "RESET",
+          43,
+          3.0
+        ],
+        [
+          1785454380000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785454560000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785454740000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785454920000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785455100000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785455280000,
+          "MEASURED",
+          43,
+          3.0
+        ],
+        [
+          1785455460000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785455640000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785455820000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785456000000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785456180000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785456360000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785456540000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785456720000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785456900000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785457080000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785457260000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785457440000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785457620000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785457800000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785457980000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785458160000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785458340000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785458520000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785458700000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785458880000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785459060000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785459240000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785459420000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785459600000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785459780000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785459960000,
+          "MEASURED",
+          42,
+          3.0
+        ],
+        [
+          1785460140000,
+          "MEASURED",
+          41,
+          3.0
+        ],
+        [
+          1785460320000,
+          "MEASURED",
+          41,
+          3.0
+        ],
+        [
+          1785460500000,
+          "MEASURED",
+          41,
+          3.0
+        ],
+        [
+          1785460680000,
+          "MEASURED",
+          41,
+          3.0
+        ],
+        [
+          1785460860000,
+          "MEASURED",
+          40,
+          3.0
+        ],
+        [
+          1785461040000,
+          "MEASURED",
+          40,
+          3.0
+        ],
+        [
+          1785461220000,
+          "MEASURED",
+          40,
+          3.0
+        ],
+        [
+          1785461400000,
+          "MEASURED",
+          40,
+          3.0
+        ],
+        [
+          1785461580000,
+          "MEASURED",
+          39,
+          3.0
+        ],
+        [
+          1785461760000,
+          "MEASURED",
+          39,
+          3.0
+        ],
+        [
+          1785461940000,
+          "MEASURED",
+          38,
+          3.0
+        ],
+        [
+          1785462120000,
+          "MEASURED",
+          38,
+          3.0
+        ],
+        [
+          1785462300000,
+          "MEASURED",
+          38,
+          3.0
+        ],
+        [
+          1785462480000,
+          "MEASURED",
+          37,
+          3.0
+        ],
+        [
+          1785462660000,
+          "MEASURED",
+          37,
+          3.0
+        ],
+        [
+          1785462840000,
+          "MEASURED",
+          37,
+          3.0
+        ],
+        [
+          1785463020000,
+          "MEASURED",
+          36,
+          3.0
+        ],
+        [
+          1785463200000,
+          "MEASURED",
+          36,
+          3.0
+        ],
+        [
+          1785463380000,
+          "MEASURED",
+          36,
+          3.0
+        ],
+        [
+          1785463560000,
+          "MEASURED",
+          36,
+          3.0
+        ],
+        [
+          1785463740000,
+          "MEASURED",
+          35,
+          3.0
+        ],
+        [
+          1785463920000,
+          "MEASURED",
+          35,
+          3.0
+        ],
+        [
+          1785464100000,
+          "MEASURED",
+          35,
+          3.0
+        ],
+        [
+          1785464280000,
+          "MEASURED",
+          35,
+          3.0
+        ],
+        [
+          1785464460000,
+          "MEASURED",
+          34,
+          3.0
+        ],
+        [
+          1785464640000,
+          "MEASURED",
+          34,
+          3.0
+        ],
+        [
+          1785464820000,
+          "MEASURED",
+          34,
+          3.0
+        ],
+        [
+          1785465000000,
+          "MEASURED",
+          34,
+          3.0
+        ],
+        [
+          1785465180000,
+          "MEASURED",
+          34,
+          3.0
+        ],
+        [
+          1785465360000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785465540000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785465720000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785465900000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785466080000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785466260000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785466440000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785466620000,
+          "MEASURED",
+          33,
+          3.0
+        ],
+        [
+          1785466800000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785466980000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785467160000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785467340000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785467520000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785467700000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785467880000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785468060000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785468240000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785468420000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785468600000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785468780000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785468960000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785469140000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785469320000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785469500000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785469680000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785469860000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785470040000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785470220000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785470400000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785470580000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785470760000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785470940000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785471120000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785471300000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785471480000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785471660000,
+          "MEASURED",
+          31,
+          3.0
+        ],
+        [
+          1785471840000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785472020000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785472200000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785472380000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785472560000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785472740000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785472920000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785473100000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785473280000,
+          "MEASURED",
+          30,
+          3.0
+        ],
+        [
+          1785473460000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785473640000,
+          "MEASURED",
+          32,
+          3.0
+        ],
+        [
+          1785473820000,
+          "MEASURED",
+          32,
           3.0
         ]
       ]
@@ -8333,36 +12463,36 @@
     "body_battery": [
       {
         "date": "2026-07-30",
-        "charged": 47,
-        "drained": 0,
+        "charged": 50,
+        "drained": 45,
         "startTimestampGMT": "2026-07-30T05:00:00.0",
-        "endTimestampGMT": "2026-07-30T12:43:00.0",
+        "endTimestampGMT": "2026-07-31T05:00:00.0",
         "startTimestampLocal": "2026-07-30T00:00:00.0",
-        "endTimestampLocal": "2026-07-30T07:43:00.0",
+        "endTimestampLocal": "2026-07-31T00:00:00.0",
         "bodyBatteryValuesArray": [
           [
             1785387600000,
             27
           ],
           [
-            1785396420000,
-            49
-          ],
-          [
-            1785396960000,
-            49
-          ],
-          [
-            1785405420000,
-            63
-          ],
-          [
-            1785406320000,
-            64
-          ],
-          [
             1785414600000,
             74
+          ],
+          [
+            1785416400000,
+            73
+          ],
+          [
+            1785443580000,
+            54
+          ],
+          [
+            1785445200000,
+            54
+          ],
+          [
+            1785471840000,
+            30
           ]
         ],
         "bodyBatteryValueDescriptorDTOList": [
@@ -8376,10 +12506,10 @@
           }
         ],
         "bodyBatteryDynamicFeedbackEvent": {
-          "eventTimestampGmt": "2026-07-30T12:30:31.0",
-          "bodyBatteryLevel": "MODERATE",
-          "feedbackShortType": null,
-          "feedbackLongType": "EARLY_MORNING_HIGH_MODERATE_GOOD_SLEEP_DURATION"
+          "eventTimestampGmt": "2026-07-31T02:05:00.0",
+          "bodyBatteryLevel": "HIGH",
+          "feedbackShortType": "SLEEP_PREPARATION_RECOVERING_AND_EXERCISE",
+          "feedbackLongType": "SLEEP_PREPARATION_RECOVERING_AND_EXERCISE"
         },
         "bodyBatteryActivityEvent": [
           {
@@ -8390,6 +12520,33 @@
             "bodyBatteryImpact": 49,
             "feedbackType": "NONE",
             "shortFeedback": "NONE"
+          },
+          {
+            "eventType": "RECOVERY",
+            "eventStartTimeGmt": "2026-07-30T20:51:52.0",
+            "timezoneOffset": -18000000,
+            "durationInMilliseconds": 3480000,
+            "bodyBatteryImpact": 0,
+            "feedbackType": "RECOVERY_BODY_BATTERY_NOT_INCREASE",
+            "shortFeedback": "RESTFUL_PERIOD"
+          },
+          {
+            "eventType": "ACTIVITY",
+            "eventStartTimeGmt": "2026-07-30T22:14:19.0",
+            "timezoneOffset": -18000000,
+            "durationInMilliseconds": 1800000,
+            "bodyBatteryImpact": -3,
+            "feedbackType": "EXERCISE_TRAINING_EFFECT_BELOW_2",
+            "shortFeedback": "EASY_AEROBIC_BASE"
+          },
+          {
+            "eventType": "ACTIVITY",
+            "eventStartTimeGmt": "2026-07-30T22:46:22.0",
+            "timezoneOffset": -18000000,
+            "durationInMilliseconds": 2040000,
+            "bodyBatteryImpact": -7,
+            "feedbackType": "EXERCISE_TRAINING_EFFECT_2",
+            "shortFeedback": "EASY_AEROBIC"
           }
         ],
         "endOfDayBodyBatteryDynamicFeedbackEvent": {
